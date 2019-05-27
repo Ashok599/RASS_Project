@@ -1,0 +1,30 @@
+.ServiceContainer {
+    height: 100%;
+    position: fixed;
+    background: #8080803d;
+}
+
+.serviceDetail {
+    padding-top: 10px;
+}
+.servicesContainer {
+    /* background: #8080803d; */
+}
+
+.wrapper {
+    height: 100vh;
+}
+.innerWrapper {
+    height: 89%;
+    margin: 0px 60px;
+    background: white;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* overflow: scroll; */
+}
+
+
+.contentContainer {
+    width: 100%
+}

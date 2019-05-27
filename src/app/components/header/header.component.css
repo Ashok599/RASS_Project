@@ -1,0 +1,37 @@
+.mainNavBar {
+    background-color: #343a40;
+}
+
+.navbar {
+    padding: 0rem 0rem 0.05rem 0rem;
+    background: #fff !important;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,90,122,1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,90,122,1);
+    box-shadow: 0px 1px 3px 0px rgba(0,90,122,1);
+}
+
+.navbar-nav {
+    margin-right: 20px;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+/* a:active { 
+    border-bottom: 2px solid #005a7a;
+} */
+
+ul li a {
+    border-radius: 0.2rem;
+    color: #005a7a;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    background-color: #005a7a;
+    color: #f1f1f1;
+}
+

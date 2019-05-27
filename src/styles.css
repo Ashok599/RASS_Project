@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(./assets/fonts/Helvetica/helvetica-light.woff);
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url(./assets/fonts/Open-Sans/OpenSans-Light.ttf);
+}
+
+* {
+  /* font-family: "Helvetica"; */
+}
+
+
+html, body {
+  /* font-family: "Helvetica", serif !important; */
+  font-family: 'Open-Sans', sans-serif;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+}
+
+.NoPadding {
+  padding: 0 !important;
+}
+.font18 {
+  font-size: 18px;
+}
+.NoMargin {
+  margin: 0 !important;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #005a7a;
+}

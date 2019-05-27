@@ -1,0 +1,36 @@
+<div class="container-fluid ServiceContainer NoPadding">
+  <div class="row NoMargin">
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 NoPadding navbar bg-light sidebar">
+      <table class="table NoMargin" id="service-table">
+        <tr>
+          <td>
+            <a class="nav-link" routerLink="./overview/">Overview</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="nav-link" routerLink="./management/">Management</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="nav-link" routerLink="./vision-and-mission/">Vision and Mission </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="nav-link" routerLink="./qualitypolicy/">Quality Policy</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">
+      <div class="servicesContainer">
+        <h2 class="text-center">About Us</h2>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

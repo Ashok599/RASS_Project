@@ -1,0 +1,75 @@
+.ServiceContainer {
+    height: 100%;
+    position: fixed;
+}
+
+.serviceSideNav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.sidebar {
+    display: block;
+    height: 100vh;
+    background: #005a7a !important;
+}
+
+#service-table td {
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+#service-table td > a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #005a7a;
+}
+
+.navbar table tr:hover {
+    background-color: #4da5c49c;
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
+}
+
+.navbar table tr td {
+    border-top: 0px;
+    border-bottom: 1px solid black;
+}
+
+.serviceDetail {
+    padding-top: 10px;
+}
+.servicesContainer {
+    background: #8080803d;
+}
+
+.subListMenu td ul > li {
+    color: white;
+    cursor: pointer;
+}
+
+
+.subListMenu td ul li>a {
+    cursor: pointer;
+}
+.subListMenu td ul>li:hover {
+    background-color: #4da5c49c;
+}
+
+.list-group .list-group-item {
+    background: #005a7a;
+    color: white;
+}
+.list-group .fa {
+    padding-right: 8px;
+}

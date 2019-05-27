@@ -1,0 +1,22 @@
+.wrapper {
+    height: 100vh;
+}
+.innerWrapper {
+    /* height: 89%; */
+    margin: 0px 60px;
+    background: white;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* overflow: scroll; */
+}
+
+.list-group-item { 
+    border: none !important;
+}
+.list-group {
+    margin-left: 5%;
+}
+.contentContainer {
+    width: 100%
+}

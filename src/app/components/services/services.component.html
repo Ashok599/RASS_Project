@@ -1,0 +1,57 @@
+<div class="container-fluid ServiceContainer NoPadding">
+  <div class="row NoMargin">
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 NoPadding navbar bg-light sidebar">
+      <table class="table NoMargin" id="service-table">
+        <tr>
+          <td>
+            <a class="nav-link" (click)="subList = false" routerLink="./pre-construction/">Pre-Construction Stage</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a style="cursor: pointer;" class="nav-link" routerLink="./construction"
+              (click)="toggleSubList()">Construction Stage</a>
+          </td>
+        </tr>
+        <tr class="subListMenu" *ngIf="subList">
+          <td>
+            <!-- <ul>
+              <li><i class="fa fa-address-book" aria-hidden="true"></i><a class="sub-nav-link" (click)="showSubService('Time Management')">Time Management</a></li>
+              <li><a class="sub-nav-link" (click)="showSubService('Cost Management')">Cost Management</a></li>
+              <li><a class="sub-nav-link" (click)="showSubService('Quality Management')">Quality Management</a></li>
+              <li><a class="sub-nav-link" (click)="showSubService('Safety Management')">Safety Management</a></li>
+              <li><a class="sub-nav-link" (click)="showSubService('Risk Management')">Risk Management</a></li>
+            </ul> -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock" aria-hidden="true"></i><a class="sub-nav-link">Time
+                  Management</a></li>
+
+              <li class="list-group-item" (click)="showSubService('Cost Management')"><i class="fa fa-credit-card" aria-hidden="true"></i><a class="sub-nav-link">Cost
+                  Management</a></li>
+              <li class="list-group-item" (click)="showSubService('Quality Management')"><i class="fa fa-check" aria-hidden="true"></i><a class="sub-nav-link">Quality
+                  Management</a></li>
+              <li class="list-group-item" (click)="showSubService('Safety Management')"><i class="fa fa-life-ring" aria-hidden="true"></i><a class="sub-nav-link">Safety
+                  Management</a></li>
+              <li class="list-group-item" (click)="showSubService('Risk Management')"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">Risk
+                  Management</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="nav-link" (click)="subList = false" routerLink="./post-construction/">Post-Construction Stage</a>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">
+      <div class="servicesContainer">
+        <h2 class="text-center">Services</h2>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
