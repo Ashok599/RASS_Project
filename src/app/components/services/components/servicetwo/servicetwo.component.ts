@@ -28,6 +28,7 @@ export class ServicetwoComponent implements OnInit {
     this.constrObj = {
       "Time Management": {
         "isEnabled": true,
+        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
         "values": [
           "Milestone Schedule",
           "Critical Path Review",
@@ -39,6 +40,7 @@ export class ServicetwoComponent implements OnInit {
       },
       "Cost Management": {
         "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/cost-management1.png",
         "values": [
           "Actual v/s Budgeted costs",
           "Bill Checking",
@@ -49,6 +51,7 @@ export class ServicetwoComponent implements OnInit {
       },
        "Quality Management": {
         "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
         "values": [
           "Daily Supervision",
           "Review and Approval of Materials",
@@ -60,6 +63,7 @@ export class ServicetwoComponent implements OnInit {
       },
        "Safety Management": {
         "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/safety-management.png",
         "values": [
           "Safety Induction",
           "Safety Audits",
@@ -70,6 +74,7 @@ export class ServicetwoComponent implements OnInit {
       },
        "Risk Management": {
         "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/risk-management.png",
         "values": [
           "Identification of Risk",
           "Evaluation of Risk",
