@@ -17,10 +17,12 @@ import { AboutusModule } from './components/aboutus/aboutus.module';
 
 import { AgmCoreModule } from '@agm/core';
 
+import { NguCarouselModule } from '@ngu/carousel';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, ProjectsComponent, ServicesComponent, AboutusComponent, ContactusComponent],
   imports: [
-    BrowserModule, AppRoutingModule, ServicesModule, ProjectsModule, NgbModule, AboutusModule,
+    BrowserModule, AppRoutingModule, ServicesModule, ProjectsModule, NgbModule, AboutusModule, NguCarouselModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_KEY'
     })
