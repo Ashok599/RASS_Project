@@ -4,9 +4,23 @@
       <div class="servicesContainer">
         <h2 class="text-center">Projects</h2>
         <div class="innerWrapper">
-          <div class="row">
-            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="proDesc text-center">
+          <div class="row proCardRow">
+            <div class="proCCardCol col-xs-12 col-lg-4 col-md-4 col-sm-6 col-12"  *ngFor="let project of projects | keyvalue">
+              <!-- {{roject | json}} -->
+              <div class="proCard text-center">
+                <div class="proCardImg">
+                    <img class="proImg" src="{{project.value.proMainImg}}" alt="">
+                </div>
+                <div>
+                  <img src="{{project.value.proLogo}}" alt="">
+                </div>
+                <div>
+                    <h5 style="margin: 0;">{{ project.value.proName }}</h5>
+                    <p style="padding: 0;">{{ project.value.proLocation }}</p>
+                  </div>
+              </div>
+
+              <!-- <div class="proDesc text-center">
                 <h5>Mahindra & Mahindra</h5>
                 <img src="../../../assets/projectLogos/mahindra.png" alt="">
                 <p>Nasik, Maharashtra</p>
@@ -23,8 +37,14 @@
                   <li *ngFor="let i of myCarousel.pointNumbers; let i = index"
                     [class.active]="i==myCarousel.activePoint" (click)="myCarousel.moveTo(i)"></li>
                 </ul>
-              </ngu-carousel>
+              </ngu-carousel> -->
             </div>
+            <!-- <div class="col-xs-12 col-lg-4 col-md-4 col-sm-6 col-12">
+
+            </div>
+            <div class="col-xs-12 col-lg-4 col-md-4 col-sm-6 col-12">
+              
+              </div> -->
           </div>
         </div>
       </div>
