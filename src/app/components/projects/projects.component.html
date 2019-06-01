@@ -1,31 +1,55 @@
 <div class="container-fluid ServiceContainer NoPadding">
+  <ng-template class="custom" #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">{{proTitle}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="proData">
+        <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+          <div class="sliderImgDiv col-xs-12 col-lg-6 col-md-6 col-sm-12 col-12">
+            <img class="sliderImg" src="{{ item }}" alt="">
+          </div>
+        </ngu-tile>
+        <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+        <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+        <ul class="myPoint" NguCarouselPoint>
+          <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint"
+            (click)="myCarousel.moveTo(i)"></li>
+        </ul>
+      </ngu-carousel>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Close</button>
+    </div>
+  </ng-template>
   <div class="row NoMargin">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 serviceDetail NoPadding">
       <div class="servicesContainer">
+        <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
         <h2 class="text-center">Projects</h2>
         <div class="innerWrapper">
           <div class="row proCardRow">
-            <div class="proCCardCol col-xs-12 col-lg-4 col-md-4 col-sm-6 col-12"  *ngFor="let project of projects | keyvalue">
+            <div class="proCCardCol col-xs-12 col-lg-4 col-md-4 col-sm-6 col-12"
+              *ngFor="let project of projects | keyvalue" (click)="open(content, project.value)">
               <!-- {{roject | json}} -->
               <div class="proCard text-center">
                 <div class="proCardImg">
-                    <img class="proImg" src="{{project.value.proMainImg}}" alt="">
+                  <img class="proImg" src="{{project.value.proMainImg}}" alt="">
                 </div>
                 <div>
                   <img src="{{project.value.proLogo}}" alt="">
                 </div>
                 <div>
-                    <h5 style="margin: 0;">{{ project.value.proName }}</h5>
-                    <p style="padding: 0;">{{ project.value.proLocation }}</p>
-                  </div>
+                  <h5 style="margin: 0;">{{ project.value.proName }}</h5>
+                  <p style="padding: 0;">{{ project.value.proLocation }}</p>
+                </div>
               </div>
 
-              <!-- <div class="proDesc text-center">
-                <h5>Mahindra & Mahindra</h5>
-                <img src="../../../assets/projectLogos/mahindra.png" alt="">
-                <p>Nasik, Maharashtra</p>
-              </div>
-              <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="mahindra">
+
+              <!-- <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="mahindra">
                 <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
                   <div class="sliderImgDiv col-xs-12 col-lg-6 col-md-6 col-sm-12 col-12">
                     <img class="sliderImg" src="{{ item }}" alt="">
