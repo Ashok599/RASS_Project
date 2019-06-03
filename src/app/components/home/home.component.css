@@ -1,5 +1,5 @@
 .bgImage {
-    background-image: url(../../../assets/images/construction.jpg);
+    background-image: url(../../../assets/images/773716.jpg);
     height: 90vh;
     position: relative;
     background-size: cover;
@@ -62,17 +62,16 @@
 
 .rassDesc {
     color: white;
+    padding: 1% 10%;
 }
 
 .title {
-    text-shadow: -3px 5px 4px rgb(240, 59, 7);
-}
-
-.rassDesc {
-    padding: 10%;
+    /* text-shadow: -3px 5px 4px rgb(240, 59, 7); */
+    color: white;
 }
 
 .desc {
     font-size: 20px;
-    text-shadow: -3px 5px 4px rgb(25, 21, 248);
+    color: #aee1f3;
+    /* text-shadow: -3px 5px 4px rgb(25, 21, 248); */
 }

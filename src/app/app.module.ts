@@ -18,9 +18,10 @@ import { AboutusModule } from './components/aboutus/aboutus.module';
 import { AgmCoreModule } from '@agm/core';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import { OurclientsComponent } from './components/ourclients/ourclients.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, ProjectsComponent, ServicesComponent, AboutusComponent, ContactusComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, ProjectsComponent, ServicesComponent, AboutusComponent, ContactusComponent, OurclientsComponent],
   imports: [
     BrowserModule, AppRoutingModule, ServicesModule, ProjectsModule, NgbModule, AboutusModule, NguCarouselModule,
     AgmCoreModule.forRoot({
