@@ -2,12 +2,8 @@
     height: 100vh;
 }
 .innerWrapper {
-    /* height: 89%; */
-    margin: 0px 60px;
-    background: white;
-    border-radius: 15px;
+    margin: 1% 4% 0% 4%;
     padding: 20px;
-    /* overflow: scroll; */
 }
 
 .list-group-item { 
@@ -22,4 +18,9 @@
 .desc {
     padding: 0px 10%;
     font-size: 18px;
+}
+
+.mngmtImg {
+    border-radius: 49%;
+    width: 75%
 }
