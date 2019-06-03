@@ -17,12 +17,12 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class ProjectsComponent implements OnInit {
   @Input() name: string;
   closeResult: string;
-  mahindra  = [
-    '../../../assets/projectPhotos/Mahindra1.JPG',
-    '../../../assets/projectPhotos/Mahindra2.jpg',
-    '../../../assets/projectPhotos/Mahindra3.JPG',
-    // '../../../assets/projectPhotos/Bedmutha 4.jpg'
-  ];
+  // mahindra  = [
+  //   '../../../assets/projectPhotos/Mahindra1.JPG',
+  //   '../../../assets/projectPhotos/Mahindra2.jpg',
+  //   '../../../assets/projectPhotos/Mahindra3.JPG',
+  //   // '../../../assets/projectPhotos/Bedmutha 4.jpg'
+  // ];
 
   projects: any;
 
@@ -51,7 +51,7 @@ export class ProjectsComponent implements OnInit {
 
       this.modalService.open(content, { size: 'lg', centered: true, windowClass: 'my-modal' });
 
-  }
+  } 
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
