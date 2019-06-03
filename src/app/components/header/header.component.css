@@ -16,7 +16,7 @@
 
 .logo {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: inline-block;
 }
 /* a:active { 
@@ -26,8 +26,8 @@
 ul li a {
     border-radius: 0.2rem;
     color: #005a7a;
-    font-weight: bold;
-    font-size: 18px;
+    /* font-weight: bold; */
+    font-size: 16px;
 }
 
 ul li a:hover {

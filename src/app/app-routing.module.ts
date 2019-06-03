@@ -7,6 +7,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { OurclientsComponent } from './components/ourclients/ourclients.component';
+
 
 import { ServiceoneComponent } from './components/services/components/serviceone/serviceone.component';
 import { ServicetwoComponent } from './components/services/components/servicetwo/servicetwo.component';
@@ -62,6 +64,7 @@ const routes: Routes = [
     ]
   },
   { path: 'contactus', component: ContactusComponent },
+  { path: 'ourclients', component: OurclientsComponent },
   { path: '**', component: HomeComponent }
 ];
 

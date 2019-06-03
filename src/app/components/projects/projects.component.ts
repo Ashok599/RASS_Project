@@ -2,7 +2,10 @@ import { Component, Input, OnInit, ChangeDetectionStrategy, AfterViewInit, Chang
 import { Observable, interval } from 'rxjs';
 import { startWith, take, map } from 'rxjs/operators';
 import { NguCarouselConfig } from '@ngu/carousel';
-import { slider } from './hello-slide.animation'
+import { slider } from './hello-slide.animation';
+
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-projects',
@@ -13,6 +16,7 @@ import { slider } from './hello-slide.animation'
 })
 export class ProjectsComponent implements OnInit {
   @Input() name: string;
+  closeResult: string;
   mahindra  = [
     '../../../assets/projectPhotos/Mahindra1.JPG',
     '../../../assets/projectPhotos/Mahindra2.jpg',
@@ -35,9 +39,30 @@ export class ProjectsComponent implements OnInit {
     animation: 'lazy'
   };
   tempData: any[];
+  proData: any = [];
+  proTitle: any;
   
-  constructor(private cdr: ChangeDetectorRef) {}
+  constructor(private cdr: ChangeDetectorRef, private modalService: NgbModal) {}
 
+  open(content, projectData) {
+    // debugger;
+    this.proData = projectData.proImages;
+    this.proTitle = projectData.proName;
+
+      this.modalService.open(content, { size: 'lg', centered: true, windowClass: 'my-modal' });
+
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return  `with: ${reason}`;
+    }
+  }
+  
   ngOnInit() {
     this.projects = {
       "pro1": {

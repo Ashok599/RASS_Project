@@ -26,7 +26,7 @@
 
 #service-table td > a {
     color: #fff !important;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .navbar {
@@ -34,7 +34,7 @@
 }
 
 .navbar table tr:hover {
-    background-color: #80808059;
+    background-color: #4da5c49c;
     border-radius: 5px;
 }
 .title {
