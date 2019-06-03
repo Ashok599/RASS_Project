@@ -9,7 +9,7 @@
 .CarouselRow {
     position: absolute;
     bottom: 0%;
-    background: #000000c7;
+    background: transparent;
     width: 100%;
 }
 
