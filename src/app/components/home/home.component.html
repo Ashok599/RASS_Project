@@ -8,6 +8,20 @@
       effective and Quality project management services for Construction Project in various sectors.
     </p>
   </div>
+  <div class="row NoMargin NoPadding AchivementsCarousel">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-12 NoPadding outlineNone carousel-fade achivement">
+      <ngu-carousel #myCarousel [inputs]="carouselAchivements" [dataSource]="achivements">
+        <ngu-tile class="my-auto" style="padding: 0px;" *nguCarouselDef="let item; let i = index; let ani = animate">
+          <div class="achivementDiv col-xs-12 col-lg-8 col-md-8 col-sm-12 col-12">
+            <img class="achivementImg" src="{{ item }}" alt="">
+            <!-- <img src="../../../assets/images/achivements2.png" alt=""> -->
+          </div>
+        </ngu-tile>
+        <!-- <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:0.5">&lt;</button>
+        <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:0.5">&gt;</button> -->
+      </ngu-carousel>
+    </div>
+  </div>
   <div class="row NoMargin CarouselRow">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12 NoPadding outlineNone carousel-fade">
       <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="clientlog">
@@ -19,6 +33,10 @@
         <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:0.5">&lt;</button>
         <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:0.5">&gt;</button>
       </ngu-carousel>
+      <div class="NoPadding NoMargin text-center" style="color: #005a7a;">
+        OUR CLIENTS
+      </div>
     </div>
+
   </div>
 </div>

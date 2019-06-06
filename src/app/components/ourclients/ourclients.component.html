@@ -1,12 +1,16 @@
 <div class="container-fluid ServiceContainer NoPadding">
-   <div class="row NoMargin">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 serviceDetail NoPadding">
-        <div class="servicesContainer">
-          <h2 class="text-center">OUR CLIENTS</h2>
-          <div class="innerWrapper">
-            our clients works
+  <div class="row NoMargin">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 serviceDetail NoPadding">
+      <div class="servicesContainer">
+        <div class="innerWrapper">
+          <h3 class="text-center">OUR CLIENTS</h3>
+          <div class="row">
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 my-auto clientLogoCard" *ngFor="let logo of clientlog">
+              <img style="width: 100%;" src="{{ logo }}" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

@@ -4,7 +4,7 @@
       <table class="table NoMargin" id="service-table">
         <tr>
           <td>
-            <a class="nav-link" (click)="subList = false" routerLink="./pre-construction/">Pre-Construction Stage</a>
+            <a class="nav-link">Pre-Construction Stage</a>
           </td>
         </tr>
         <tr>
@@ -13,15 +13,8 @@
               (click)="toggleSubList()">Construction Stage</a>
           </td>
         </tr>
-        <tr class="subListMenu" *ngIf="subList">
+        <tr class="subListMenu">
           <td style="padding: 0px;">
-            <!-- <ul>
-              <li><i class="fa fa-address-book" aria-hidden="true"></i><a class="sub-nav-link" (click)="showSubService('Time Management')">Time Management</a></li>
-              <li><a class="sub-nav-link" (click)="showSubService('Cost Management')">Cost Management</a></li>
-              <li><a class="sub-nav-link" (click)="showSubService('Quality Management')">Quality Management</a></li>
-              <li><a class="sub-nav-link" (click)="showSubService('Safety Management')">Safety Management</a></li>
-              <li><a class="sub-nav-link" (click)="showSubService('Risk Management')">Risk Management</a></li>
-            </ul> -->
             <ul class="list-group list-group-flush">
               <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock" aria-hidden="true"></i><a class="sub-nav-link">Time
                   Management</a></li>

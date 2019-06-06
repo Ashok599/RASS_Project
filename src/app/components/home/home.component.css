@@ -9,7 +9,7 @@
 .CarouselRow {
     position: absolute;
     bottom: 0%;
-    background: transparent;
+    background: white;
     width: 100%;
 }
 
@@ -36,7 +36,19 @@
 .height {
     height: 150px;
 }
-
+.achivement {
+    margin: 0 auto;
+}
+.achivementDiv {
+    margin: 0 auto;
+}
+:host ::ng-deep .tile {
+    box-shadow: none !important;
+}
+.achivementImg {
+    height: 50vh;
+    width: 100%;
+}
 /* .carousel-caption {
     position: relative !important;
     right: 0px;
@@ -273,5 +285,5 @@ nav h1 {
 }
 
 .sliderImg {
-    width: 200%
+    width: 100%
 }

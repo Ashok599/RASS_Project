@@ -1,7 +1,7 @@
 .ServiceContainer {
     height: 100%;
     position: fixed;
-    background-image: url(../../../assets/images/cons_1349x414.jpg);
+    /* background-image: url(../../../assets/images/cons_1349x414.jpg); */
     /* background-repeat: no-repeat; */
     background-size: auto;
 }
@@ -29,7 +29,7 @@
 
 #service-table td > a {
     color: #fff !important;
-    font-weight: bold;
+    /* font-weight: bold; */
     
 }
 

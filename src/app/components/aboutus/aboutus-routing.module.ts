@@ -5,6 +5,7 @@ import { ManagementComponent } from './management/management.component';
 import { OverviewComponent } from './overview/overview.component';
 import { QualityPolicyComponent } from './quality-policy/quality-policy.component';
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
+import { ActivitesComponent } from './activites/activites.component';
 
 const routes: Routes = [
   { path: '', component: ManagementComponent, pathMatch: 'full' },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'qualitypolicy', component: QualityPolicyComponent },
   { path: 'vision-and-mission', component: VisionMissionComponent },
   { path: 'management', component: ManagementComponent },
-
+  { path: 'our-activities', component: ActivitesComponent },
   // { path: '**', component: ServicethreeComponent }
 ];
 

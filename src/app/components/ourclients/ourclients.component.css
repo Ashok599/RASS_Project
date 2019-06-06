@@ -19,3 +19,7 @@
 .contentContainer {
     width: 100%
 }
+.clientLogoCard {
+    /* border: 1px solid black; */
+    padding: 10px;
+}

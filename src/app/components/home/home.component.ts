@@ -9,7 +9,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class HomeComponent implements OnInit {
@@ -25,12 +25,28 @@ export class HomeComponent implements OnInit {
     },
     touch: true,
     loop: true,
+    interval: { timing: 3000 },
+    animation: 'lazy'
+  };
+
+  public carouselAchivements$: Observable<number[]>;
+  public carouselAchivements: NguCarouselConfig = {
+    grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
+    speed: 2000,
+    point: {
+      visible: true
+    },
+    touch: true,
+    loop: true,
+    RTL: true,
     interval: { timing: 4000 },
     animation: 'lazy'
   };
+
   tempData: any[];
   proData: any = [];
   proTitle: any;
+  achivements: any[];
 
   constructor(private modalService: NgbModal) {
     // config.interval = 4000;
@@ -40,6 +56,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    this.achivements = [
+      "../../../assets/images/achivements1.png",
+      "../../../assets/images/achivements2.png",
+    ];
+
     this.clientlog = [
       '../../../assets/clientLogos/A1.png',
       '../../../assets/clientLogos/A2.png',
