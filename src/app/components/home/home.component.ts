@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     touch: true,
     loop: true,
     RTL: true,
-    interval: { timing: 4000 },
+    interval: { timing: 2000 },
     animation: 'lazy'
   };
 
