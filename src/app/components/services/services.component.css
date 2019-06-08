@@ -32,6 +32,12 @@
     /* font-weight: bold; */
     
 }
+tr.subListMenu {
+    font-size: 14px;
+}
+.subListMenu .list-group .list-group-item, .subListMenu .nav-link {
+    padding-left: 35px !important;
+}
 
 .navbar {
     background-color: #005a7a;

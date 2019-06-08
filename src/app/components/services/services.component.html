@@ -3,11 +3,35 @@
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 NoPadding navbar bg-light sidebar">
       <table class="table NoMargin" id="service-table">
         <tr>
+          <td (click)="showSubService('Design Engineering')">
+            <a class="nav-link">DESIGN ENGINEERING</a>
+          </td>
+        </tr>
+        <tr class="subListMenu">
+          <td style="padding: 0px;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" (click)="showSubService('Architectural/ Structural')"><a
+                  class="sub-nav-link">Architectural/ Structural</a></li>
+              <li class="list-group-item" (click)="showSubService('Electrical Engineering')"><a
+                  class="sub-nav-link">Electrical
+                  Engineering</a></li>
+              <li class="list-group-item" (click)="showSubService('Quality Management')"><a
+                  class="sub-nav-link">Mechanical Engineering</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td (click)="showSubService('Project Management')">
+            <a class="nav-link">PROJECT MANAGEMENT</a>
+          </td>
+        </tr>
+
+        <tr class="subListMenu">
           <td>
             <a class="nav-link">Pre-Construction Stage</a>
           </td>
         </tr>
-        <tr>
+        <tr class="subListMenu">
           <td>
             <a style="cursor: pointer;" class="nav-link" routerLink="./construction"
               (click)="toggleSubList()">Construction Stage</a>
@@ -16,33 +40,37 @@
         <tr class="subListMenu">
           <td style="padding: 0px;">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock" aria-hidden="true"></i><a class="sub-nav-link">Time
+              <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock"
+                  aria-hidden="true"></i><a class="sub-nav-link">Time
                   Management</a></li>
 
-              <li class="list-group-item" (click)="showSubService('Cost Management')"><i class="fa fa-credit-card" aria-hidden="true"></i><a class="sub-nav-link">Cost
+              <li class="list-group-item" (click)="showSubService('Cost Management')"><i class="fa fa-credit-card"
+                  aria-hidden="true"></i><a class="sub-nav-link">Cost
                   Management</a></li>
-              <li class="list-group-item" (click)="showSubService('Quality Management')"><i class="fa fa-check" aria-hidden="true"></i><a class="sub-nav-link">Quality
+              <li class="list-group-item" (click)="showSubService('Quality Management')"><i class="fa fa-check"
+                  aria-hidden="true"></i><a class="sub-nav-link">Quality
                   Management</a></li>
-              <li class="list-group-item" (click)="showSubService('Safety Management')"><i class="fa fa-life-ring" aria-hidden="true"></i><a class="sub-nav-link">Safety
+              <li class="list-group-item" (click)="showSubService('Safety Management')"><i class="fa fa-life-ring"
+                  aria-hidden="true"></i><a class="sub-nav-link">Safety
                   Management</a></li>
-              <li class="list-group-item" (click)="showSubService('Risk Management')"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">Risk
+              <li class="list-group-item" (click)="showSubService('Risk Management')"><i
+                  class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">Risk
                   Management</a></li>
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr class="subListMenu">
           <td>
             <a class="nav-link" (click)="subList = false" routerLink="./post-construction/">Post-Construction Stage</a>
           </td>
         </tr>
-
       </table>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">
       <div class="servicesContainer">
         <h2 class="text-center">Services</h2>
         <div>
-          <router-outlet></router-outlet>
+
         </div>
       </div>
     </div>
