@@ -14,10 +14,69 @@ export class ServicesComponent implements OnInit {
 
   // subList = false;
   // onLoad = true;
+  constrObj: any = {};
 
   constructor(private router: Router, private data_service: DataService) { }
 
   ngOnInit() {
+    this.constrObj = {
+      "Time Management": {
+        "isEnabled": true,
+        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
+        "values": [
+          "Milestone Schedule",
+          "Critical Path Review",
+          "Schedule Review",
+          "Resources Requirements",
+          "Anticipated Cash Flow",
+          "Progress/Performance review"
+        ]
+      },
+      "Cost Management": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/cost-management1.png",
+        "values": [
+          "Actual v/s Budgeted costs",
+          "Bill Checking",
+          "Monitor cash flow",
+          "Evaluate change/variations impact",
+          "Develop cost forecasts"
+        ]
+      },
+       "Quality Management": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
+        "values": [
+          "Daily Supervision",
+          "Review and Approval of Materials",
+          "Timely inspections and testing",
+          "Quality Trainings",
+          "Internal Quality Audit",
+          "Snag lists implementation"
+        ]
+      },
+       "Safety Management": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/safety-management.png",
+        "values": [
+          "Safety Induction",
+          "Safety Audits",
+          "Work Permit Implementation",
+          "Daily Supervision",
+          "Safety Training"
+        ]
+      },
+       "Risk Management": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/risk-management.png",
+        "values": [
+          "Identification of Risk",
+          "Evaluation of Risk",
+          "Risk mitigation Strategies",
+          "Maintain Risk Register"
+        ]
+      }
+    };
     // console.log("this.router.url : ", this.router.url);
     // if (this.router.url == '/services' || this.router.url == '/services/pre-construction') {
     //   this.router.navigateByUrl('/services/pre-construction');
