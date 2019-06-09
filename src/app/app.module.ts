@@ -18,14 +18,33 @@ import { AgmCoreModule } from '@agm/core';
 
 import { NguCarouselModule } from '@ngu/carousel';
 import { OurclientsComponent } from './components/ourclients/ourclients.component';
-import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AccordionModule } from 'primeng/accordion';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, ProjectsComponent, ServicesComponent, AboutusComponent, ContactusComponent, OurclientsComponent],
+  declarations: [
+    AppComponent, 
+    HomeComponent, 
+    HeaderComponent, 
+    ProjectsComponent, 
+    ServicesComponent, 
+    AboutusComponent, 
+    ContactusComponent, 
+    OurclientsComponent],
   imports: [
-    BrowserModule, AppRoutingModule, ProjectsModule, NgbModule, AboutusModule, AccordionModule, BrowserAnimationsModule, NguCarouselModule,
+    BrowserModule, 
+    AppRoutingModule, 
+    ProjectsModule, 
+    NgbModule, 
+    FormsModule, 
+    AboutusModule, 
+    AccordionModule, 
+    BrowserAnimationsModule, 
+    NguCarouselModule, 
+    DialogModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_KEY'
     })

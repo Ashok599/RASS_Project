@@ -35,21 +35,25 @@ export class ProjectsComponent implements OnInit {
     },
     touch: true,
     loop: true,
-    interval: { timing: 3000 },
+    interval: { timing: 300000 },
     animation: 'lazy'
   };
   tempData: any[];
   proData: any = [];
   proTitle: any;
+  display = false;
+  proLogo: any;
   
   constructor(private cdr: ChangeDetectorRef, private modalService: NgbModal) {}
 
   open(content, projectData) {
     // debugger;
+    this.display = true
     this.proData = projectData.proImages;
     this.proTitle = projectData.proName;
+    this.proLogo = projectData.proLogo;
 
-      this.modalService.open(content, { size: 'lg', centered: true, windowClass: 'my-modal' });
+      // this.modalService.open(content, { size: 'lg', centered: true, windowClass: 'my-modal' });
 
   } 
 
@@ -131,17 +135,17 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Mahindra3.JPG"
         ]
       },
-      "pro7": {
-        "proName": "Minda Industries",
-        "proLocation": "Uttarakhand",
-        "proLogo": "../../../assets/projectLogos/minda-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/MINDA 1.JPG",
-        "proImages": [
-          "../../../assets/projectPhotos/MINDA 1.JPG",
-          "../../../assets/projectPhotos/MINDA 2.JPG",
-          "../../../assets/projectPhotos/MINDA 3.JPG"
-        ]
-      },
+      // "pro7": {
+      //   "proName": "Minda Industries",
+      //   "proLocation": "Uttarakhand",
+      //   "proLogo": "../../../assets/projectLogos/minda-logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/MINDA 1.JPG",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/MINDA 1.JPG",
+      //     "../../../assets/projectPhotos/MINDA 2.JPG",
+      //     "../../../assets/projectPhotos/MINDA 3.JPG"
+      //   ]
+      // },
       "pro8": {
         "proName": "Inox Air Products Ltd.",
         "proLocation": "Vile Bhagad MIDC, Raigad, Maharashtra",
@@ -197,61 +201,61 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Doehler 3.jpg"
         ]
       },
-      "pro13": {
-        "proName": "Kerry Ingredients India Pvt. Ltd.",
-        "proLocation": "Bawal, Haryana",
-        "proLogo": "../../../assets/projectLogos/kerry-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Kerry 1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Kerry 1.jpg",
-          // "../../../assets/projectPhotos/Mahindra2.jpg",
-          // "../../../assets/projectPhotos/Mahindra3.JPG"
-        ]
-      },
-      "pro14": {
-        "proName": "Schreiber Dynamix Dairies Limited",
-        "proLocation": "Baramati, Maharashtra",
-        "proLogo": "../../../assets/projectLogos/schreiber-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Screibher 3.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Screibher 1.jpg",
-          "../../../assets/projectPhotos/Screibher 2.jpg",
-          "../../../assets/projectPhotos/Screibher 3.jpg"
-        ]
-      },
-      "pro15": {
-        "proName": "Oswal F M Hammerle Ltd.",
-        "proLocation": "Kolhapur, Maharashtra",
-        "proLogo": "../../../assets/projectLogos/oswal-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Oswal F.M. Hammerle 2.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Oswal F.M. Hammerle 1.jpg",
-          "../../../assets/projectPhotos/Oswal F.M. Hammerle 2.jpg",
-          "../../../assets/projectPhotos/Oswal F.M. Hammerle 3.jpg"
-        ]
-      },
-      "pro16": {
-        "proName": "Soktas Textile",
-        "proLocation": "Kolhapur, Maharashtra",
-        "proLogo": "../../../assets/projectLogos/soktas-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Soktas 1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Soktas 1.jpg",
-          "../../../assets/projectPhotos/Soktas 2.jpg",
-          "../../../assets/projectPhotos/Soktas 3.jpg"
-        ]
-      },
-      "pro17": {
-        "proName": "Brinton Carpets",
-        "proLocation": "Pirangut, Pune, Maharashtra",
-        "proLogo": "../../../assets/projectLogos/brinton -logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/Brinton1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/Brinton1.png",
-          "../../../assets/projectPhotos/Brinton2.png",
-          "../../../assets/projectPhotos/Brinton3.png"
-        ]
-      },
+      // "pro13": {
+      //   "proName": "Kerry Ingredients India Pvt. Ltd.",
+      //   "proLocation": "Bawal, Haryana",
+      //   "proLogo": "../../../assets/projectLogos/kerry-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/Kerry 1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Kerry 1.jpg",
+      //     // "../../../assets/projectPhotos/Mahindra2.jpg",
+      //     // "../../../assets/projectPhotos/Mahindra3.JPG"
+      //   ]
+      // },
+      // "pro14": {
+      //   "proName": "Schreiber Dynamix Dairies Limited",
+      //   "proLocation": "Baramati, Maharashtra",
+      //   "proLogo": "../../../assets/projectLogos/schreiber-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/Screibher 3.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Screibher 1.jpg",
+      //     "../../../assets/projectPhotos/Screibher 2.jpg",
+      //     "../../../assets/projectPhotos/Screibher 3.jpg"
+      //   ]
+      // },
+      // "pro15": {
+      //   "proName": "Oswal F M Hammerle Ltd.",
+      //   "proLocation": "Kolhapur, Maharashtra",
+      //   "proLogo": "../../../assets/projectLogos/oswal-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/Oswal F.M. Hammerle 2.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Oswal F.M. Hammerle 1.jpg",
+      //     "../../../assets/projectPhotos/Oswal F.M. Hammerle 2.jpg",
+      //     "../../../assets/projectPhotos/Oswal F.M. Hammerle 3.jpg"
+      //   ]
+      // },
+      // "pro16": {
+      //   "proName": "Soktas Textile",
+      //   "proLocation": "Kolhapur, Maharashtra",
+      //   "proLogo": "../../../assets/projectLogos/soktas-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/Soktas 1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Soktas 1.jpg",
+      //     "../../../assets/projectPhotos/Soktas 2.jpg",
+      //     "../../../assets/projectPhotos/Soktas 3.jpg"
+      //   ]
+      // },
+      // "pro17": {
+      //   "proName": "Brinton Carpets",
+      //   "proLocation": "Pirangut, Pune, Maharashtra",
+      //   "proLogo": "../../../assets/projectLogos/brinton -logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/Brinton1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Brinton1.png",
+      //     "../../../assets/projectPhotos/Brinton2.png",
+      //     "../../../assets/projectPhotos/Brinton3.png"
+      //   ]
+      // },
       "pro18": {
         "proName": "Tessitura Monti India pvt.ltd.",
         "proLocation": "Kolhapur, Maharashtra",
