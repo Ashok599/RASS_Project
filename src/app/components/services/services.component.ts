@@ -14,15 +14,86 @@ export class ServicesComponent implements OnInit {
 
   // subList = false;
   // onLoad = true;
+  design = true;
+  management = false;
+  construction = false;
   constrObj: any = {};
 
   constructor(private router: Router, private data_service: DataService) { }
 
   ngOnInit() {
     this.constrObj = {
-      "Time Management": {
+      "Architectural/ Structural": {
         "isEnabled": true,
-        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
+        "imgSrc": "../../../../../assets/images/Architectural-Structural.jpg",
+        "values": [
+          "Master Planning",
+          "Design Basis Report",
+          "Concept Designs",
+          "3D Views",
+          "Working Drawings",
+          "LEED certification",
+          "Integrated Drawings",
+          "As-Built Drawings",
+          "BOQ/ Tendering"
+        ]
+      },
+      "Electrical Engineering": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/Electrical-Engineering.jpg",
+        "values": [
+          "HT/LT",
+          "DG/ Transformer/ Panels",
+          "Lighting",
+          "3D Views",
+          "IT/ Telecommunication",
+          "Fire Alarm",
+          "Data/ Voice",
+          "Solar System",
+          "BOQ/ Tendering"
+        ]
+      },
+      "Mechanical Engineering": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/Mechanical-Engineering.jpg",
+        "values": [
+          "Fire Fighting",
+          "Process Piping",
+          "Utility Piping",
+          "HVAC",
+          "ETP/ STP",
+          "LPG/ CNG/ Steam",
+          "BOQ/ Tendering"
+        ]
+      },
+      "Pre-Construction Stage": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/preConstruction.jpg",
+        "values": [
+          "Liasoning",
+          "Constructability Review",
+          "Value Engineering",
+          "Tracking Design Deliverables",
+          "Pre-Qualification of Contractors",
+          "Review of Tender Documents",
+          "Techno-Commercial Negotiation"
+        ]
+      },
+      "Post-Construction Stage": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/postConstruction.png",
+        "values": [
+          "Final Reconciliation",
+          "Extra Item Settlement",
+          "Project Completion Report",
+          "Assistance in As-Built",
+          "Drawings",
+          "Handover Documentation"
+        ]
+      },
+      "Time Management": {
+        "isEnabled": false,
+        "imgSrc": "../../../../../assets/images/subServices/time-management2.png",
         "values": [
           "Milestone Schedule",
           "Critical Path Review",
@@ -45,7 +116,7 @@ export class ServicesComponent implements OnInit {
       },
        "Quality Management": {
         "isEnabled": false,
-        "imgSrc": "../../../../../assets/images/subServices/time-management1.png",
+        "imgSrc": "../../../../../assets/images/subServices/Quality-Management.png",
         "values": [
           "Daily Supervision",
           "Review and Approval of Materials",
@@ -77,20 +148,6 @@ export class ServicesComponent implements OnInit {
         ]
       }
     };
-    // console.log("this.router.url : ", this.router.url);
-    // if (this.router.url == '/services' || this.router.url == '/services/pre-construction') {
-    //   this.router.navigateByUrl('/services/pre-construction');
-    // } else if (this.router.url == '/pre-construction') { 
-    //   this.router.navigateByUrl('/services/pre-construction');
-    // } else if (this.router.url != '/services/post-construction') { 
-    //   this.router.navigateByUrl('/services/post-construction');
-    // }
-
-    // if (this.router.url != 'services/pre-construction') {
-    //   this.router.navigateByUrl('services/pre-construction');
-    // } else {
-    //   this.router.navigateByUrl('services/construction');
-    // }
   }
 
   showSubService(service: any) {
@@ -111,14 +168,23 @@ export class ServicesComponent implements OnInit {
     }
   }
 
-  // toggleSubList() {
-  //   if (this.onLoad) {
-  //     this.subList = !this.subList;
-  //   }
-  //   else {
-  //     this.subList = !this.subList;
-  //   }
-  // }
+  toggleSubList(list) {
+    if (list == "design") {
+      this.design = !this.design;
+      // this.management = false;
+    }
+    else if(list == "management"){
+      this.management = !this.management;
+      // this.design = false;
+      if(!this.management){
+        this.construction = false;
+      }
+    }
+    else if (list == "construction") {
+      debugger
+      this.construction = !this.construction;
+    }
+  }
   
   // public showSubService(service: string) {
   //   this.data_service.notifyOther(service);

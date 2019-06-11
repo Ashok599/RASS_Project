@@ -35,7 +35,7 @@ export class ProjectsComponent implements OnInit {
     },
     touch: true,
     loop: true,
-    interval: { timing: 300000 },
+    interval: { timing: 2000 },
     animation: 'lazy'
   };
   tempData: any[];
@@ -43,6 +43,7 @@ export class ProjectsComponent implements OnInit {
   proTitle: any;
   display = false;
   proLogo: any;
+  proAdd: any;
   
   constructor(private cdr: ChangeDetectorRef, private modalService: NgbModal) {}
 
@@ -52,6 +53,7 @@ export class ProjectsComponent implements OnInit {
     this.proData = projectData.proImages;
     this.proTitle = projectData.proName;
     this.proLogo = projectData.proLogo;
+    this.proAdd = projectData.proLocation;
 
       // this.modalService.open(content, { size: 'lg', centered: true, windowClass: 'my-modal' });
 

@@ -5,7 +5,9 @@
     /* background-repeat: no-repeat; */
     background-size: auto;
 }
-
+.servicesContainer {
+    margin: 0 2%;
+}
 .serviceSideNav {
     height: 100%;
     position: fixed;
@@ -82,4 +84,10 @@ tr.subListMenu {
 }
 .navList.list-group .fa {
     padding-right: 8px;
+}
+.ssImg {
+    width: 100%;
+}
+.serviceList.list-group .list-group-item {
+    border: 0 !important;
 }
