@@ -93,6 +93,24 @@ export class ServicesComponent implements OnInit {
     // }
   }
 
+  showSubService(service: any) {
+    switch (service) {
+      case service: {
+        for (let key in this.constrObj) {
+          // console.log(key);
+          if(key){
+            if (service == key) {
+              this.constrObj[key].isEnabled = true;
+            } else {
+              this.constrObj[key].isEnabled = false;
+            }
+          }
+        }
+        break;
+      }
+    }
+  }
+
   // toggleSubList() {
   //   if (this.onLoad) {
   //     this.subList = !this.subList;
