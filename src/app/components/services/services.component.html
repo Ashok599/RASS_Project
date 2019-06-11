@@ -9,7 +9,7 @@
         </tr>
         <tr class="subListMenu">
           <td style="padding: 0px;">
-            <ul class="list-group list-group-flush">
+            <ul class="navList list-group list-group-flush">
               <li class="list-group-item" (click)="showSubService('Architectural/ Structural')"><a
                   class="sub-nav-link">Architectural/ Structural</a></li>
               <li class="list-group-item" (click)="showSubService('Electrical Engineering')"><a
@@ -39,7 +39,7 @@
         </tr>
         <tr class="subListMenu">
           <td style="padding: 0px;">
-            <ul class="list-group list-group-flush">
+            <ul class="navList list-group list-group-flush">
               <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock"
                   aria-hidden="true"></i><a class="sub-nav-link">Time
                   Management</a></li>
@@ -70,12 +70,29 @@
       <div class="servicesContainer">
         <h2 class="text-center">Services</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-12 NoPadding font18">
+                <div *ngFor="let item of constrObj | keyvalue">
+                  <div  class="row" style="padding-bottom: 15px;" *ngIf="item.value.isEnabled">
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                          <h4 class="ssTitle"> {{ item.key }} :</h4>
+                          <ul class="list-group list-group-flush">
+                            <li *ngFor="let list of item.value.values" class="list-group-item"> {{ list }} </li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                        <!-- {{ item.value.imgSrc | json }} -->
+                        <img class="ssImg" src="{{ item.value.imgSrc }}" alt="">
+                      </div>
+                  </div>
+    
+                </div>
+            </div>
+          <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

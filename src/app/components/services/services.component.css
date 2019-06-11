@@ -76,10 +76,10 @@ tr.subListMenu {
     background-color: #4da5c49c;
 }
 
-.list-group .list-group-item {
+.navList.list-group .list-group-item {
     background: #005a7a;
     color: white;
 }
-.list-group .fa {
+.navList.list-group .fa {
     padding-right: 8px;
 }
