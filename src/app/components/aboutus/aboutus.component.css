@@ -49,9 +49,10 @@
 .serviceDetail {
     padding-top: 10px;
 }
-/* .servicesContainer {
-    background: #8080803d;
-} */
+.servicesContainer {
+    
+    background-image: url(../../../assets/images/bg7.png);
+}
 
 .subListMenu td ul > li {
     color: white;
