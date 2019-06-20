@@ -4,60 +4,54 @@
       <table class="table NoMargin" id="service-table">
         <tr>
           <td (click)="toggleSubList('design')">
-            <a class="nav-link">DESIGN ENGINEERING</a>
+            <a class="main-nav nav-link">DESIGN ENGINEERING</a>
           </td>
         </tr>
-        <tr *ngIf="design" class="subListMenu">
+        <tr class="subListMenu">
           <td style="padding: 0px;">
             <ul class="navList list-group list-group-flush">
               <li class="list-group-item" (click)="showSubService('Architectural/ Structural')"><a
-                  class="sub-nav-link">Architectural/ Structural</a></li>
+                  class="sub-nav-link">ARCHITECTURAL/STRUCTURAL</a></li>
               <li class="list-group-item" (click)="showSubService('Electrical Engineering')"><a
-                  class="sub-nav-link">Electrical
-                  Engineering</a></li>
+                  class="sub-nav-link">ELECTRICAL ENGINEERING</a></li>
               <li class="list-group-item" (click)="showSubService('Mechanical Engineering')"><a
-                  class="sub-nav-link">Mechanical Engineering</a></li>
+                  class="sub-nav-link">MECHANICAL ENGINEERING</a></li>
             </ul>
           </td>
         </tr>
         <tr>
           <td (click)="toggleSubList('management')">
-            <a class="nav-link">PROJECT MANAGEMENT</a>
+            <a class="main-nav nav-link">PROJECT MANAGEMENT</a>
           </td>
         </tr>
 
-        <tr *ngIf="management" class="subListMenu">
+        <tr class="subListMenu">
           <td (click)="showSubService('Pre-Construction Stage')">
             <a class="nav-link">PRE-CONSTRUCTION STAGE</a>
           </td>
         </tr>
-        <tr *ngIf="management" class="subListMenu" (click)="toggleSubList('construction')">
+        <tr class="subListMenu" (click)="showSubService('Time Management')">
           <td>
             <a style="cursor: pointer;" class="nav-link">CONSTRUCTION STAGE</a>
           </td>
         </tr>
-        <tr *ngIf="construction" class="subListMenu">
+        <tr class="sub subListMenu">
           <td style="padding: 0px;">
             <ul class="navList list-group list-group-flush">
               <li class="list-group-item" (click)="showSubService('Time Management')"><i class="fa fa-clock"
-                  aria-hidden="true"></i><a class="sub-nav-link">Time
-                  Management</a></li>
+                  aria-hidden="true"></i><a class="sub-nav-link">TIME MANGEMENT</a></li>
               <li class="list-group-item" (click)="showSubService('Cost Management')"><i class="fa fa-credit-card"
-                  aria-hidden="true"></i><a class="sub-nav-link">Cost
-                  Management</a></li>
+                  aria-hidden="true"></i><a class="sub-nav-link">COST MANAGEMENT</a></li>
               <li class="list-group-item" (click)="showSubService('Quality Management')"><i class="fa fa-check"
-                  aria-hidden="true"></i><a class="sub-nav-link">Quality
-                  Management</a></li>
+                  aria-hidden="true"></i><a class="sub-nav-link">QUALITY MANAGEMENT</a></li>
               <li class="list-group-item" (click)="showSubService('Safety Management')"><i class="fa fa-life-ring"
-                  aria-hidden="true"></i><a class="sub-nav-link">Safety
-                  Management</a></li>
+                  aria-hidden="true"></i><a class="sub-nav-link">SAFETY MANAGEMENT</a></li>
               <li class="list-group-item" (click)="showSubService('Risk Management')"><i
-                  class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">Risk
-                  Management</a></li>
+                  class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">RISK MANAGEMENT</a></li>
             </ul>
           </td>
         </tr>
-        <tr *ngIf="management" class="subListMenu">
+        <tr class="subListMenu">
           <td (click)="showSubService('Post-Construction Stage')">
             <a class="nav-link">POST-CONSTRUCTION STAGE</a>
           </td>
@@ -66,11 +60,11 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">
       <div class="servicesContainer">
-        <h2 class="text-center">Services</h2>
+        <!-- <h2 class="text-center">Services</h2> -->
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-12 NoPadding font18">
             <div *ngFor="let item of constrObj | keyvalue">
-              <div class="row" style="padding: 10px 30px;" *ngIf="item.value.isEnabled">
+              <div class="row" style="padding: 25px 30px;" *ngIf="item.value.isEnabled">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <h4 class="ssTitle"> {{ item.key }} :</h4>
                   <ul class="serviceList list-group list-group-flush">

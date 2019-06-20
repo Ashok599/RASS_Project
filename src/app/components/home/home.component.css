@@ -74,7 +74,7 @@
 
 .rassDesc {
     color: white;
-    padding: 1% 10%;
+    padding: 0.5% 10%;
 }
 
 .title {
@@ -285,5 +285,5 @@ nav h1 {
 }
 
 .sliderImg {
-    width: 100%
+    width: 180%
 }

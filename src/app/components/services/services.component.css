@@ -38,9 +38,18 @@ tr.subListMenu {
     font-size: 14px;
 }
 .subListMenu .list-group .list-group-item, .subListMenu .nav-link {
-    padding-left: 35px !important;
+    padding-left: 15px !important;
+    font-size: small;
 }
-
+.sub .subListMenu {
+    font-size: smaller;
+}
+.main-nav {
+    background-color: yellowgreen;
+}
+td {
+    cursor: pointer;
+}
 .navbar {
     background-color: #005a7a;
 }
