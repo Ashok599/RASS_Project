@@ -18,6 +18,7 @@ export class ServicesComponent implements OnInit {
   management = false;
   construction = false;
   constrObj: any = {};
+  activeTab: any = '';
 
   constructor(private router: Router, private data_service: DataService) { }
 
@@ -151,6 +152,7 @@ export class ServicesComponent implements OnInit {
   }
 
   showSubService(service: any) {
+    this.activeTab = service;
     switch (service) {
       case service: {
         for (let key in this.constrObj) {

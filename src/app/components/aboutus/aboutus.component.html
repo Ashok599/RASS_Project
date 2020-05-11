@@ -4,27 +4,27 @@
       <table class="table NoMargin" id="service-table">
         <tr>
           <td>
-            <a class="nav-link" routerLink="./overview/">OVERVIEW</a>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'overview'}" routerLink="./overview/" (click)="activeTab = 'overview'">OVERVIEW</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link" routerLink="./management/">MANAGEMENT</a>
+            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'management'}" routerLink="./management/" (click)="activeTab = 'management'">MANAGEMENT</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link" routerLink="./vision-and-mission/">VISION AND MISSION</a>
+            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'vision'}" routerLink="./vision-and-mission/" (click)="activeTab = 'vision'">VISION AND MISSION</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link" routerLink="./qualitypolicy/">QUALITY POLICY</a>
+            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'quality'}" routerLink="./qualitypolicy/" (click)="activeTab = 'quality'">QUALITY POLICY</a>
           </td>
         </tr>
         <tr>
             <td>
-              <a class="nav-link" routerLink="./our-activities/">ACTIVITIES</a>
+              <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'activities'}" routerLink="./our-activities/" (click)="activeTab = 'activities'">ACTIVITIES</a>
             </td>
           </tr>
       </table>

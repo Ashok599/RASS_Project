@@ -36,3 +36,8 @@ ul li a:hover {
     color: #f1f1f1;
 }
 
+.activeMainTab {
+    background-color: #005a7a;
+    color: #f1f1f1 !important;
+}
+

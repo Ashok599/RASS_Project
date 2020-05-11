@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  headerTab: any = '';
 
   constructor() { }
 
   ngOnInit() {
+
+    // if(localStorage.getItem('activeheaderTab')) {
+    //   this.headerTab = localStorage.getItem('activeheaderTab');
+    // }
+    // else {
+    //   this.headerTab = 'home';
+    // }
   }
 
 }

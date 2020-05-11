@@ -11,22 +11,22 @@
                 <div class="col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 ml-auto pr-5">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/home/">HOME</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'home'}" routerLink="/home/" (click)="headerTab = 'home'">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/aboutus/">ABOUT US</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'aboutus'}" (click)="headerTab = 'aboutus'" routerLink="/aboutus/">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/services/">SERVICES</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'services'}" routerLink="/services/" (click)="headerTab = 'services'">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/projects/">PROJECTS</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'project'}" routerLink="/projects/" (click)="headerTab = 'project'">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/ourclients/">OUR CLIENTS</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'ourclients'}" routerLink="/ourclients/" (click)="headerTab = 'ourclients'">OUR CLIENTS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="/contactus/">CONTACT US</a>
+                      <a class="nav-link" [ngClass]="{'activeMainTab': headerTab === 'contactus'}" routerLink="/contactus/" (click)="headerTab = 'contactus'">CONTACT US</a>
                     </li>
                   </ul>
                 </div>
