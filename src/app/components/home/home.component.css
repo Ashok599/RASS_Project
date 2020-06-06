@@ -285,7 +285,8 @@ nav h1 {
 }
 
 .sliderImg {
-    width: 220%
+    width: 220%;
+    max-height: 100px;
 }
 
 .CarouselRow .my-auto {

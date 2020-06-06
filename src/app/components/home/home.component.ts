@@ -113,6 +113,13 @@ export class HomeComponent implements OnInit {
       '../../../assets/clientLogos/M4.jpg',
       '../../../assets/clientLogos/N1.jpg',
       '../../../assets/clientLogos/N2.jpg',
+      '../../../assets/clientLogos/N3.jpg',
+      '../../../assets/clientLogos/N4.png',
+      '../../../assets/clientLogos/O1.jpg',
+      '../../../assets/clientLogos/O2.jpg',
+      '../../../assets/clientLogos/O3.png',
+      '../../../assets/clientLogos/O4.png',
+      '../../../assets/clientLogos/P1.jfif',
     ]
 
     // this.Carousel = {
