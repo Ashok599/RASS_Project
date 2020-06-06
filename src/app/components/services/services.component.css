@@ -96,7 +96,13 @@ td {
 }
 .ssImg {
     width: 100%;
+    padding-top: 3em;
 }
 .serviceList.list-group .list-group-item {
     border: 0 !important;
+}
+
+.serviceList .fa.fa-circle {
+    font-size: 12px;
+    padding-right: 10px;
 }

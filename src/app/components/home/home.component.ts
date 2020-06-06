@@ -19,27 +19,27 @@ export class HomeComponent implements OnInit {
   public carouselTileItems$: Observable<number[]>;
   public carouselTileConfig: NguCarouselConfig = {
     grid: { xs: 2, sm: 3, md: 6, lg: 8, all: 0 },
-    speed: 2000,
+    speed: 3000,
     point: {
       visible: true
     },
     touch: true,
     loop: true,
-    interval: { timing: 3000 },
+    interval: { timing: 4000 },
     animation: 'lazy'
   };
 
   public carouselAchivements$: Observable<number[]>;
   public carouselAchivements: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
-    speed: 2000,
+    speed: 3000,
     point: {
       visible: true
     },
     touch: true,
     loop: true,
     RTL: true,
-    interval: { timing: 2000 },
+    interval: { timing: 4000 },
     animation: 'lazy'
   };
 
