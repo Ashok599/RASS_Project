@@ -98,6 +98,11 @@ td {
     width: 100%;
     padding-top: 3em;
 }
+
+.ssTitle {
+    width: 100%;
+    text-align: center;
+}
 .serviceList.list-group .list-group-item {
     border: 0 !important;
 }

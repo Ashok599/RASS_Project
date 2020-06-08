@@ -203,17 +203,15 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Doehler 3.jpg"
         ]
       },
-      "pro13": {
-        "proName": "TGL Carraro",
-        "proLocation": "Ranjangaon, Pune",
-        "proLogo": "../../../assets/projectLogos/carraro-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/tgl1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/tgl1.png",
-          // "../../../assets/projectPhotos/Mahindra2.jpg",
-          // "../../../assets/projectPhotos/Mahindra3.JPG"
-        ]
-      },
+      // "pro13": {
+      //   "proName": "TGL Carraro",
+      //   "proLocation": "Ranjangaon, Pune",
+      //   "proLogo": "../../../assets/projectLogos/carraro-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/tgl1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/tgl1.png",
+      //   ]
+      // },
       "pro14": {
         "proName": "Mahindra Agri Ltd",
         "proLocation": "Nifhad, Nashik",
@@ -225,17 +223,16 @@ export class ProjectsComponent implements OnInit {
           // "../../../assets/projectPhotos/Screibher 3.jpg"
         ]
       },
-      "pro15": {
-        "proName": "TATA DLT",
-        "proLocation": "Chakan MIDC, Pune",
-        "proLogo": "../../../assets/projectLogos/tata-dlt-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/tatadlt1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/tatadlt1.png",
-          "../../../assets/projectPhotos/tatadlt2.png",
-          // "../../../assets/projectPhotos/Oswal F.M. Hammerle 3.jpg"
-        ]
-      },
+      // "pro15": {
+      //   "proName": "TATA DLT",
+      //   "proLocation": "Chakan MIDC, Pune",
+      //   "proLogo": "../../../assets/projectLogos/tata-dlt-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/tatadlt1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/tatadlt1.png",
+      //     "../../../assets/projectPhotos/tatadlt2.png",
+      //   ]
+      // },
       "pro16": {
         "proName": "United Phosphorous Ltd",
         "proLocation": "Jhagadia",
@@ -258,17 +255,17 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Bobst 3.JPG"
         ]
       },
-      "pro18": {
-        "proName": "Tessitura Monti India pvt.ltd.",
-        "proLocation": "Kolhapur, Maharashtra",
-        "proLogo": "../../../assets/projectLogos/tessitura_monti_logo.png",
-        "proMainImg": "../../../assets/projectPhotos/tessitura.png",
-        "proImages": [
-          "../../../assets/projectPhotos/tessitura.png",
-          // "../../../assets/projectPhotos/Mahindra2.jpg",
-          // "../../../assets/projectPhotos/Mahindra3.JPG"
-        ]
-      },
+      // "pro18": {
+      //   "proName": "Tessitura Monti India pvt.ltd.",
+      //   "proLocation": "Kolhapur, Maharashtra",
+      //   "proLogo": "../../../assets/projectLogos/tessitura_monti_logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/tessitura.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/tessitura.png",
+      //     // "../../../assets/projectPhotos/Mahindra2.jpg",
+      //     // "../../../assets/projectPhotos/Mahindra3.JPG"
+      //   ]
+      // },
       "pro19": {
         "proName": "Geberit India Manufacturing Pvt. Ltd.",
         "proLocation": "Chakan MIDC, Pune, Maharashtra",
@@ -336,17 +333,17 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/orchid_3.jpg"
         ]
       },
-      "pro25": {
-        "proName": "Sandvik Asia",
-        "proLocation": "Pune",
-        "proLogo": "../../../assets/projectLogos/sandvik-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/sandvik1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/sandvik1.png",
-          "../../../assets/projectPhotos/sandvik2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
-        ]
-      },
+      // "pro25": {
+      //   "proName": "Sandvik Asia",
+      //   "proLocation": "Pune",
+      //   "proLogo": "../../../assets/projectLogos/sandvik-logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/sandvik1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/sandvik1.png",
+      //     "../../../assets/projectPhotos/sandvik2.png",
+      //     // "../../../assets/projectPhotos/orchid_3.jpg"
+      //   ]
+      // },
       "pro26": {
         "proName": "Endress + Hauser",
         "proLocation": "Aurangabad",
@@ -380,39 +377,39 @@ export class ProjectsComponent implements OnInit {
           // "../../../assets/projectPhotos/orchid_3.jpg"
         ]
       },
-      "pro29": {
-        "proName": "Jindal Drugs",
-        "proLocation": "Taloja MIDC, Mumbai",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/jindal1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/jindal1.png",
-          // "../../../assets/projectPhotos/daramic2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
-        ]
-      },
-      "pro30": {
-        "proName": "Cipla Limited",
-        "proLocation": "Kurkumbh MIDC, Pune",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/cipla1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/cipla1.png",
-          // "../../../assets/projectPhotos/daramic2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
-        ]
-      },
-      "pro31": {
-        "proName": "Fenace, Amtek Auto",
-        "proLocation": "Sahajpur and Hosur",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/fenace1.png",
-        "proImages": [
-          "../../../assets/projectPhotos/fenace1.png",
-          // "../../../assets/projectPhotos/daramic2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
-        ]
-      },
+      // "pro29": {
+      //   "proName": "Jindal Drugs",
+      //   "proLocation": "Taloja MIDC, Mumbai",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/jindal1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/jindal1.png",
+      //     // "../../../assets/projectPhotos/daramic2.png",
+      //     // "../../../assets/projectPhotos/orchid_3.jpg"
+      //   ]
+      // },
+      // "pro30": {
+      //   "proName": "Cipla Limited",
+      //   "proLocation": "Kurkumbh MIDC, Pune",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/cipla1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/cipla1.png",
+      //     // "../../../assets/projectPhotos/daramic2.png",
+      //     // "../../../assets/projectPhotos/orchid_3.jpg"
+      //   ]
+      // },
+      // "pro31": {
+      //   "proName": "Fenace, Amtek Auto",
+      //   "proLocation": "Sahajpur and Hosur",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/fenace1.png",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/fenace1.png",
+      //     // "../../../assets/projectPhotos/daramic2.png",
+      //     // "../../../assets/projectPhotos/orchid_3.jpg"
+      //   ]
+      // },
       "pro32": {
         "proName": "PLANSEE India High Performance Materials Pvt Ltd",
         "proLocation": "Mysore",
@@ -435,39 +432,39 @@ export class ProjectsComponent implements OnInit {
           // "../../../assets/projectPhotos/Plansee 3.jpg"
         ]
       },
-      "pro34": {
-        "proName": "Vardhaman Textile",
-        "proLocation": "Kolhapur",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/vardhaman1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/vardhaman1.jpg",
-          // "../../../assets/projectPhotos/Plansee 2.jpg",
-          // "../../../assets/projectPhotos/Plansee 3.jpg"
-        ]
-      },
-      "pro35": {
-        "proName": "Coventya India Pvt Ltd",
-        "proLocation": "Pune",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/Coventya1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Coventya1.jpg",
-          "../../../assets/projectPhotos/Coventya2.jpg",
-          // "../../../assets/projectPhotos/Plansee 3.jpg"
-        ]
-      },
-      "pro36": {
-        "proName": "JP Laboratories Pvt Ltd",
-        "proLocation": "Kurkumbh MIDC, Pune",
-        "proLogo": "../../../assets/projectLogos/logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/jp1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/jp1.jpg",
-          // "../../../assets/projectPhotos/Coventya2.jpg",
-          // "../../../assets/projectPhotos/Plansee 3.jpg"
-        ]
-      },
+      // "pro34": {
+      //   "proName": "Vardhaman Textile",
+      //   "proLocation": "Kolhapur",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/vardhaman1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/vardhaman1.jpg",
+      //     // "../../../assets/projectPhotos/Plansee 2.jpg",
+      //     // "../../../assets/projectPhotos/Plansee 3.jpg"
+      //   ]
+      // },
+      // "pro35": {
+      //   "proName": "Coventya India Pvt Ltd",
+      //   "proLocation": "Pune",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/Coventya1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Coventya1.jpg",
+      //     "../../../assets/projectPhotos/Coventya2.jpg",
+      //     // "../../../assets/projectPhotos/Plansee 3.jpg"
+      //   ]
+      // },
+      // "pro36": {
+      //   "proName": "JP Laboratories Pvt Ltd",
+      //   "proLocation": "Kurkumbh MIDC, Pune",
+      //   "proLogo": "../../../assets/projectLogos/logo.jpg",
+      //   "proMainImg": "../../../assets/projectPhotos/jp1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/jp1.jpg",
+      //     // "../../../assets/projectPhotos/Coventya2.jpg",
+      //     // "../../../assets/projectPhotos/Plansee 3.jpg"
+      //   ]
+      // },
       "pro37": {
         "proName": "Jai Hind School",
         "proLocation": "Pune",

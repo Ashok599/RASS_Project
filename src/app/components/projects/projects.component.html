@@ -1,14 +1,14 @@
 <div class="container-fluid ServiceContainer NoPadding">
-  <p-dialog [modal]="true" [(visible)]="display" [responsive]="true" [style]="{width: '350px', minWidth: '75%'}"
-    [minY]="70" [maximizable]="true" [baseZIndex]="10000">
+  <p-dialog [modal]="true" [(visible)]="display" [responsive]="true" [draggable]="false" [style]="{maxWidth: '50%', minWidth: '50%'}"
+    [minY]="70" [maximizable]="false" [baseZIndex]="10000">
     <p-header class="text-center" style="display: inline-block;">
       <div class="">
         <h4><strong>{{proTitle}}</strong> <span style="font-size: 14px; padding-left: 10px;">{{proAdd}}</span></h4>
       </div>
     </p-header>
-    <div class="text-center">
+    <!-- <div class="text-center">
       <img src="{{proLogo}}" alt="">
-    </div>
+    </div> -->
     <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="proData">
       <ngu-tile class="my-auto" *nguCarouselDef="let item; let i = index; let ani = animate">
         <div class="sliderImgDiv col-xs-12 col-lg-6 col-md-6 col-sm-12 col-12">
