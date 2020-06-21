@@ -1,14 +1,29 @@
 .wrapper {
-    height: 100vh;
+  height: 100vh;
 }
+
 .innerWrapper {
-    margin: 1% 4% 0% 4%;
-    padding: 20px;
+  margin: 1% 4% 0% 4%;
+  padding: 20px;
 }
+
 .contentContainer {
-    width: 100%
+  width: 100%
 }
+
 .desc {
-    padding: 0px 10%;
+  padding: 0px 10%;
+  font-size: 18px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .service-head {
     font-size: 18px;
+  }
+
+  .qualityimg {
+    width: 100%;
+  }
 }

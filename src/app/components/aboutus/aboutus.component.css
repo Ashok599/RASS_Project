@@ -1,66 +1,76 @@
 .ServiceContainer {
-    height: 100%;
-    position: fixed;
+  height: 100%;
+  position: fixed;
 }
 
 .serviceSideNav {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    display: inline-block;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: inline-block;
 }
 
 .sidebar {
-    display: block;
-    height: 100vh;
-    background: #005a7a !important;
+  display: block;
+  height: 100vh;
+  background: #005a7a !important;
 }
 
 #service-table td {
-    padding: 0.2rem;
-    overflow: hidden;
+  padding: 0.2rem;
+  overflow: hidden;
 }
 
-#service-table td > a {
-    color: #fff !important;
-    /* font-weight: bold; */
+#service-table td>a {
+  color: #fff !important;
+  /* font-weight: bold; */
 }
 
 .navbar {
-    background-color: #005a7a;
+  background-color: #005a7a;
 }
 
 .navbar table tr:hover {
-    background-color: #4da5c49c;
-    border-radius: 5px;
+  background-color: #4da5c49c;
+  border-radius: 5px;
 }
+
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar table tr td {
-    border-top: 0px;
-    border-bottom: 1px solid black;
+  border-top: 0px;
+  border-bottom: 1px solid black;
 }
 
 .serviceDetail {
-    padding-top: 10px;
-}
-.servicesContainer {
-    
-    /* background-image: url(../../../assets/images/bg7.png); */
+  padding-top: 10px;
 }
 
-.subListMenu td ul > li {
-    color: white;
+.servicesContainer {
+
+  /* background-image: url(../../../assets/images/bg7.png); */
+}
+
+.subListMenu td ul>li {
+  color: white;
 }
 
 .subListMenu td ul li>a {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .subListMenu td ul>li:hover {
-    background-color: #005a7a
+  background-color: #005a7a
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #service-table td>a {
+    font-size: 10px;
+  }
 }
