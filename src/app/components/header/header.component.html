@@ -1,37 +1,40 @@
-<div class="container-fluid HeaaderContainer NoPadding">
+<!-- <div class="container-fluid HeaaderContainer NoPadding">
   <div class="row NoMargin">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 NoPadding">
-      <nav class="navbar navbar-expand-sm mainNavBar">
-          <div class="row" style="width: 100%">
-              <div class="col-12 col-xs-12 col-sm-12 col-md-2 col-lg-4 navbar-header" style="width: 16.6%;height: 3rem;">
-                  <a class="" routerLink="/home/">
-                    <img class="logo" src="../../../assets/images/rss-logo.png">
-                  </a>
-                </div>
-                <div class="col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 ml-auto pr-5">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/home/">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/aboutus/">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/services/">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/projects/">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/ourclients/">OUR CLIENTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/contactus/">CONTACT US</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-      </nav>
-    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 NoPadding"> -->
+<nav class="navbar navbar-expand-sm mainNavBar p-0 sticky-top">
+  <!-- Brand -->
+  <a class="navbar-brand" routerLink="/home/">
+    <img class="logo" src="../../../assets/images/rss-logo.png">
+  </a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+    (click)="toggleMenu = !toggleMenu">
+    <span class="fa fa-bars"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" [ngClass]="{'show': toggleMenu}">
+    <ul class="navbar-nav ml-auto pr-2">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home/" routerLinkActive="link-active">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/aboutus/" routerLinkActive="link-active">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/services/" routerLinkActive="link-active">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/projects/" routerLinkActive="link-active">PROJECTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/ourclients/" routerLinkActive="link-active">OUR CLIENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contactus/" routerLinkActive="link-active">CONTACT US</a>
+      </li>
+    </ul>
   </div>
-</div>
+
+</nav>
+<!-- </div>
+  </div>
+</div> -->

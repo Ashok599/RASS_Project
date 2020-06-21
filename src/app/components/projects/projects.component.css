@@ -25,6 +25,7 @@
 
 .proCardRow {
     padding: 0px 10px;
+    cursor: pointer;
 }
 
 .proCCardCol {
@@ -38,8 +39,15 @@
     height: 318px;
 }
 
+
+
 .proCardImg {
     padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.proCardImg:hover {
+    transform: scale(1.1);
 }
 
 .proImg {
@@ -252,6 +260,7 @@ nav h1 {
 .sliderImg {
     width: 100%
 }
+
 :host ::ng-deep .tile {
     box-shadow: none !important;
 }
