@@ -10,12 +10,18 @@
         <tr class="subListMenu">
           <td style="padding: 0px;">
             <ul class="navList list-group list-group-flush">
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Architectural/ Structural'}" (click)="showSubService('Architectural/ Structural')"><a
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Architectural/ Structural Design'}"
+                (click)="showSubService('Architectural/ Structural Design')"><a
                   class="sub-nav-link">ARCHITECTURAL/STRUCTURAL</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Electrical Engineering'}" (click)="showSubService('Electrical Engineering')"><a
-                  class="sub-nav-link">ELECTRICAL ENGINEERING</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Mechanical Engineering'}" (click)="showSubService('Mechanical Engineering')"><a
-                  class="sub-nav-link">MECHANICAL ENGINEERING</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Electrical Design'}"
+                (click)="showSubService('Electrical Design')"><a class="sub-nav-link">ELECTRICAL ENGINEERING</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'HVAC and Ventilation Design'}"
+                (click)="showSubService('HVAC and Ventilation Design')"><a class="sub-nav-link">HVAC AND VENTILATION
+                  DESIGN</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Fire Fighting Design'}"
+                (click)="showSubService('Fire Fighting Design')"><a class="sub-nav-link">FIRE FIGHTING DESIGN</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Interior and Landscape Design'}"
+                (click)="showSubService('Interior and Landscape Design')"><a class="sub-nav-link">INTERIOR AND LANDSCAPE DESIGN</a></li>
             </ul>
           </td>
         </tr>
@@ -38,16 +44,21 @@
         <tr class="sub subListMenu">
           <td style="padding: 0px;">
             <ul class="navList list-group list-group-flush">
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Time Management'}" (click)="showSubService('Time Management')"><i class="fa fa-clock"
-                  aria-hidden="true"></i><a class="sub-nav-link">TIME MANGEMENT</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Cost Management'}" (click)="showSubService('Cost Management')"><i class="fa fa-credit-card"
-                  aria-hidden="true"></i><a class="sub-nav-link">COST MANAGEMENT</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Quality Management'}" (click)="showSubService('Quality Management')"><i class="fa fa-check"
-                  aria-hidden="true"></i><a class="sub-nav-link">QUALITY MANAGEMENT</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Safety Management'}" (click)="showSubService('Safety Management')"><i class="fa fa-life-ring"
-                  aria-hidden="true"></i><a class="sub-nav-link">SAFETY MANAGEMENT</a></li>
-              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Risk Management'}" (click)="showSubService('Risk Management')"><i
-                  class="fa fa-exclamation-triangle" aria-hidden="true"></i><a class="sub-nav-link">RISK MANAGEMENT</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Time Management'}"
+                (click)="showSubService('Time Management')"><i class="fa fa-clock" aria-hidden="true"></i><a
+                  class="sub-nav-link">TIME MANGEMENT</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Cost Management'}"
+                (click)="showSubService('Cost Management')"><i class="fa fa-credit-card" aria-hidden="true"></i><a
+                  class="sub-nav-link">COST MANAGEMENT</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Quality Management'}"
+                (click)="showSubService('Quality Management')"><i class="fa fa-check" aria-hidden="true"></i><a
+                  class="sub-nav-link">QUALITY MANAGEMENT</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Safety Management'}"
+                (click)="showSubService('Safety Management')"><i class="fa fa-life-ring" aria-hidden="true"></i><a
+                  class="sub-nav-link">SAFETY MANAGEMENT</a></li>
+              <li class="list-group-item" [ngClass]="{'activeTab': activeTab === 'Risk Management'}"
+                (click)="showSubService('Risk Management')"><i class="fa fa-exclamation-triangle"
+                  aria-hidden="true"></i><a class="sub-nav-link">RISK MANAGEMENT</a></li>
             </ul>
           </td>
         </tr>
@@ -68,7 +79,8 @@
                 <h4 class="ssTitle"> {{ item.key | uppercase }}</h4>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <ul class="serviceList list-group list-group-flush">
-                    <li *ngFor="let list of item.value.values" class="list-group-item"> <i class="fa fa-circle" aria-hidden="true"></i> {{ list }} </li>
+                    <li *ngFor="let list of item.value.values" class="list-group-item"> <i class="fa fa-circle"
+                        aria-hidden="true"></i> {{ list }} </li>
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
