@@ -20,8 +20,9 @@
 
 .sidebar {
     display: block;
-    height: 100vh;
+    height: 39em;
     background: #005a7a !important;
+    overflow: auto;
 }
 
 #service-table td {
@@ -31,6 +32,7 @@
 
 #service-table td > a {
     color: #fff !important;
+    font-size: 14px;
     /* font-weight: bold; */
     
 }
@@ -39,7 +41,7 @@ tr.subListMenu {
 }
 .subListMenu .list-group .list-group-item, .subListMenu .nav-link {
     padding-left: 15px !important;
-    font-size: small;
+    font-size: 13px;
 }
 .sub .subListMenu {
     font-size: smaller;
@@ -105,9 +107,15 @@ td {
 }
 .serviceList.list-group .list-group-item {
     border: 0 !important;
+    font-size: 14px;
 }
 
 .serviceList .fa.fa-circle {
     font-size: 12px;
     padding-right: 10px;
+}
+
+.serviceList {
+    max-height: 30em;
+    overflow: auto;
 }

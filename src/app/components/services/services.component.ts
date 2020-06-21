@@ -23,6 +23,7 @@ export class ServicesComponent implements OnInit {
   constructor(private router: Router, private data_service: DataService) { }
 
   ngOnInit() {
+    this.activeTab = 'Architectural/ Structural Design';
     this.constrObj = {
       "Architectural/ Structural Design": {
         "isEnabled": true,
