@@ -18,7 +18,7 @@
 }
 
 .contentContainer {
-    width: 100%
+    width: 100%;
 }
 
 /* project card css */
@@ -36,6 +36,15 @@
     /* border: 3px solid #005a7a; */
     box-shadow: 0px 0px 2px 0px #005a7a;
     height: 318px;
+}
+
+.proCard:hover {
+    transform: translate3D(0, 5px, 0) scale(1.03);
+    transition: all 0.4s ease;
+    cursor: pointer !important;
+    -webkit-box-shadow: 0px 0px 5px 5px #005a7a;
+    -moz-box-shadow: 0px 0px 5px 5px #005a7a;
+    box-shadow: 0px 0px 5px 5px #005a7a;
 }
 
 .proCardImg {
@@ -238,7 +247,7 @@ nav h1 {
 
 .myBannerPoint .active {
     transform: translateY(-10px);
-    transition: .3s ease all;
+    transition: 0.3s ease all;
 }
 
 .sliderImgDiv {
