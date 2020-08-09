@@ -82,6 +82,21 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/SEW3.jpg"
         ]
       },
+      "pro38": {
+        "proName": "Konkan Railway Corporation Ltd.",
+        "proLocation": "Chiplun",
+        "proLogo": "../../../assets/projectLogos/SEW-logo.png",
+        "proMainImg": "../../../assets/projectPhotos/Konkan1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Konkan1.jpg",
+          "../../../assets/projectPhotos/Konkan2.jpg",
+          "../../../assets/projectPhotos/Konkan3.jpg",
+          "../../../assets/projectPhotos/Konkan4.jpg",
+          "../../../assets/projectPhotos/Konkan5.jpg",
+          "../../../assets/projectPhotos/Konkan6.jpg",
+          "../../../assets/projectPhotos/Konkan7.jpg",
+        ]
+      },
       "pro2": {
         "proName": "Huf India Pvt. Ltd.",
         "proLocation": "Chakan MIDC, Pune, Maharashtra",
