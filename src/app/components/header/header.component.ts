@@ -32,6 +32,9 @@ export class HeaderComponent implements OnInit {
     else if(this.Url.includes('home')) {
       this.headerTab = 'home';
     }
+    else {
+      this.headerTab = 'home';
+    }
     // if(localStorage.getItem('activeheaderTab')) {
     //   this.headerTab = localStorage.getItem('activeheaderTab');
     // }

@@ -41,6 +41,7 @@
 }
 .achivementDiv {
     margin: 0 auto;
+    margin-top: 23px;
 }
 :host ::ng-deep .tile {
     box-shadow: none !important;

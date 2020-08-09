@@ -79,7 +79,7 @@ export class ProjectsComponent implements OnInit {
         "proImages": [
           "../../../assets/projectPhotos/SEW1.jpg",
           "../../../assets/projectPhotos/SEW2.jpg",
-          "../../../assets/projectPhotos/SEW2.jpg"
+          "../../../assets/projectPhotos/SEW3.jpg"
         ]
       },
       "pro2": {
@@ -90,29 +90,27 @@ export class ProjectsComponent implements OnInit {
         "proImages": [
           "../../../assets/projectPhotos/HUF1.jpg",
           "../../../assets/projectPhotos/HUF2.jpg",
-          "../../../assets/projectPhotos/HUF3.JPG"
+          "../../../assets/projectPhotos/HUF3.jpg"
         ]
       },
       "pro3": {
         "proName": "Mahindra Gears & Transmission",
         "proLocation": "Chakan MIDC, Pune, Maharashtra",
         "proLogo": "../../../assets/projectLogos/mgt-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Mahindra Gears1.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Mahindra-Gears1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/Mahindra Gears1.jpg",
-          "../../../assets/projectPhotos/Mahindra Gears2.jpg",
-          "../../../assets/projectPhotos/Mahindra Gears3.jpg"
+          "../../../assets/projectPhotos/Mahindra-Gears1.jpg",
+          "../../../assets/projectPhotos/Mahindra-Gears2.jpg",
         ]
       },
       "pro4": {
         "proName": "General Motors (Export Shed)",
         "proLocation": "Talegaon, Pune, Maharashtra",
         "proLogo": "../../../assets/projectLogos/gm-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/General Motors1.jpg",
+        "proMainImg": "../../../assets/projectPhotos/General Motors 1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/General Motors1.jpg",
-          "../../../assets/projectPhotos/General Motors2.jpg",
-          "../../../assets/projectPhotos/General Motors3.jpg"
+          "../../../assets/projectPhotos/General Motors 1.jpg",
+          "../../../assets/projectPhotos/General Motors 2.jpg"
         ]
       },
       "pro5": {
@@ -130,21 +128,22 @@ export class ProjectsComponent implements OnInit {
         "proName": "Mahindra and Mahindra",
         "proLocation": "Uttarakhand",
         "proLogo": "../../../assets/projectLogos/mahindra-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Mahindra1.JPG",
+        "proMainImg": "../../../assets/projectPhotos/Mahindra 1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/Mahindra1.JPG",
-          "../../../assets/projectPhotos/Mahindra2.jpg",
-          "../../../assets/projectPhotos/Mahindra3.JPG"
+          "../../../assets/projectPhotos/Mahindra 1.jpg",
+          "../../../assets/projectPhotos/Mahindra 2.jpg",
+          "../../../assets/projectPhotos/Mahindra 3.JPG"
         ]
       },
       "pro7": {
         "proName": "Krohne Marshall",
         "proLocation": "Pune",
         "proLogo": "../../../assets/projectLogos/kron-log.jpg",
-        "proMainImg": "../../../assets/projectPhotos/krohne1.png",
+        "proMainImg": "../../../assets/projectPhotos/Krohne 1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/krohne1.png",
-          "../../../assets/projectPhotos/krohne2.png",
+          "../../../assets/projectPhotos/Krohne 1.jpg",
+          "../../../assets/projectPhotos/Krohne 2.jpg",
+          "../../../assets/projectPhotos/Krohne 3.jpg",
           // "../../../assets/projectPhotos/MINDA 3.JPG"
         ]
       },
@@ -188,8 +187,8 @@ export class ProjectsComponent implements OnInit {
         "proMainImg": "../../../assets/projectPhotos/FDC1.jpg",
         "proImages": [
           "../../../assets/projectPhotos/FDC1.jpg",
-          "../../../assets/projectPhotos/FDC2.png",
-          "../../../assets/projectPhotos/FDC2.png"
+          // "../../../assets/projectPhotos/FDC2.png",
+          // "../../../assets/projectPhotos/FDC3.png"
         ]
       },
       "pro12": {
@@ -216,11 +215,11 @@ export class ProjectsComponent implements OnInit {
         "proName": "Mahindra Agri Ltd",
         "proLocation": "Nifhad, Nashik",
         "proLogo": "../../../assets/projectLogos/mahindra-agri-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/mahindra agri1.png",
+        "proMainImg": "../../../assets/projectPhotos/Mahindra-Agri1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/mahindra agri1.png",
-          // "../../../assets/projectPhotos/Screibher 2.jpg",
-          // "../../../assets/projectPhotos/Screibher 3.jpg"
+          "../../../assets/projectPhotos/Mahindra-Agri1.jpg",
+          "../../../assets/projectPhotos/Mahindra-Agri2.jpg",
+          "../../../assets/projectPhotos/Mahindra-Agri3.jpg"
         ]
       },
       // "pro15": {
@@ -237,11 +236,11 @@ export class ProjectsComponent implements OnInit {
         "proName": "United Phosphorous Ltd",
         "proLocation": "Jhagadia",
         "proLogo": "../../../assets/projectLogos/united-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/united1.png",
+        "proMainImg": "../../../assets/projectPhotos/UPL1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/united1.png",
-          "../../../assets/projectPhotos/united2.png",
-          // "../../../assets/projectPhotos/Soktas 3.jpg"
+          "../../../assets/projectPhotos/UPL1.jpg",
+          "../../../assets/projectPhotos/UPL2.jpg",
+          "../../../assets/projectPhotos/UPL3.jpg"
         ]
       },
       "pro17": {
@@ -272,9 +271,7 @@ export class ProjectsComponent implements OnInit {
         "proLogo": "../../../assets/projectLogos/geberit-logo.jpg",
         "proMainImg": "../../../assets/projectPhotos/Geberit.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/Geberit.jpg",
-          // "../../../assets/projectPhotos/Mahindra2.jpg",
-          // "../../../assets/projectPhotos/Mahindra3.JPG"
+          "../../../assets/projectPhotos/Geberit.jpg"
         ]
       },
       "pro20": {
@@ -307,7 +304,7 @@ export class ProjectsComponent implements OnInit {
         "proImages": [
           "../../../assets/projectPhotos/Gera 1.jpg",
           "../../../assets/projectPhotos/Gera 2.jpg",
-          // "../../../assets/projectPhotos/Mahindra3.JPG"
+          "../../../assets/projectPhotos/Gera 3.jpg",
         ]
       },
       "pro23": {
@@ -348,31 +345,32 @@ export class ProjectsComponent implements OnInit {
         "proName": "Endress + Hauser",
         "proLocation": "Aurangabad",
         "proLogo": "../../../assets/projectLogos/endress-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/endress1.png",
+        "proMainImg": "../../../assets/projectPhotos/endress1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/endress1.png",
-          // "../../../assets/projectPhotos/sandvik2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
+          "../../../assets/projectPhotos/endress1.jpg",
+          "../../../assets/projectPhotos/endress2.jpg",
+          "../../../assets/projectPhotos/endress3.jpg",
         ]
       },
       "pro27": {
         "proName": "Daramic Battery Separator",
         "proLocation": "Dahej",
         "proLogo": "../../../assets/projectLogos/dramic-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/daramic1.png",
+        "proMainImg": "../../../assets/projectPhotos/daramic1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/daramic1.png",
-          "../../../assets/projectPhotos/daramic2.png",
-          // "../../../assets/projectPhotos/orchid_3.jpg"
+          "../../../assets/projectPhotos/daramic1.jpg",
+          "../../../assets/projectPhotos/daramic2.jpg",
+          "../../../assets/projectPhotos/daramic3.jpg",
+          "../../../assets/projectPhotos/daramic4.jpg",
         ]
       },
       "pro28": {
         "proName": "Mother Dairy Fruits and Vegetables Pvt Ltd",
         "proLocation": "Bhiwandi",
         "proLogo": "../../../assets/projectLogos/mother-dairy-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/mother-dairy1.png",
+        "proMainImg": "../../../assets/projectPhotos/mother-dairy1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/mother-dairy1.png",
+          "../../../assets/projectPhotos/mother-dairy1.jpg",
           // "../../../assets/projectPhotos/daramic2.png",
           // "../../../assets/projectPhotos/orchid_3.jpg"
         ]
@@ -414,20 +412,20 @@ export class ProjectsComponent implements OnInit {
         "proName": "PLANSEE India High Performance Materials Pvt Ltd",
         "proLocation": "Mysore",
         "proLogo": "../../../assets/projectLogos/plansee-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/Plansee 3.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Plansee 1.jpg",
         "proImages": [
           "../../../assets/projectPhotos/Plansee 1.jpg",
           "../../../assets/projectPhotos/Plansee 2.jpg",
-          "../../../assets/projectPhotos/Plansee 3.jpg"
         ]
       },
       "pro33": {
         "proName": "Temple Packaging",
         "proLocation": "Hyderabad, Daman and Indore",
         "proLogo": "../../../assets/projectLogos/temple-logo.jpg",
-        "proMainImg": "../../../assets/projectPhotos/TEMPLE.jpg",
+        "proMainImg": "../../../assets/projectPhotos/TEMPLE1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/TEMPLE.jpg",
+          "../../../assets/projectPhotos/TEMPLE1.jpg",
+          "../../../assets/projectPhotos/TEMPLE2.jpg",
           // "../../../assets/projectPhotos/Plansee 2.jpg",
           // "../../../assets/projectPhotos/Plansee 3.jpg"
         ]
@@ -469,11 +467,12 @@ export class ProjectsComponent implements OnInit {
         "proName": "Jai Hind School",
         "proLocation": "Pune",
         "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Jai Hind School.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Jai Hind School 1.jpg",
         "proImages": [
-          "../../../assets/projectPhotos/Jai Hind School.jpg",
-          // "../../../assets/projectPhotos/Coventya2.jpg",
-          // "../../../assets/projectPhotos/Plansee 3.jpg"
+          "../../../assets/projectPhotos/Jai Hind School 1.jpg",
+          "../../../assets/projectPhotos/Jai Hind School 2.jpg",
+          "../../../assets/projectPhotos/Jai Hind School 3.jpg",
+          "../../../assets/projectPhotos/Jai Hind School 4.jpg"
         ]
       },
     }
