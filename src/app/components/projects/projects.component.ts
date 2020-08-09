@@ -94,7 +94,7 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Konkan4.jpg",
           "../../../assets/projectPhotos/Konkan5.jpg",
           "../../../assets/projectPhotos/Konkan6.jpg",
-          "../../../assets/projectPhotos/Konkan7.jpg",
+          "../../../assets/projectPhotos/Konkan7.jpg"
         ]
       },
       "pro2": {
