@@ -10,6 +10,8 @@ export class AboutusComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    this.activeTab = 'overview';
   }
 
 

@@ -1,0 +1,12 @@
+.socialLink {
+    position: absolute;
+    right: 19px;
+    display: grid;
+    top: 39%;
+}
+
+.socialLink i {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 30px;
+}

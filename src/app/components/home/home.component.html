@@ -8,21 +8,19 @@
     </p>
   </div>
   <div class="row NoMargin NoPadding AchivementsCarousel">
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-12 NoPadding outlineNone carousel-fade achivement">
-      <ngu-carousel #myCarousel [inputs]="carouselAchivements" [dataSource]="achivements">
+    <div class="col-12 NoPadding outlineNone carousel-fade achivement text-center">
+      <!-- <ngu-carousel #myCarousel [inputs]="carouselAchivements" [dataSource]="achivements">
         <ngu-tile class="my-auto" style="padding: 0px;" *nguCarouselDef="let item; let i = index; let ani = animate">
           <div class="achivementDiv col-xs-12 col-lg-8 col-md-8 col-sm-12 col-12">
             <img class="achivementImg" src="{{ item }}" alt="">
-            <!-- <img src="../../../assets/images/achivements2.png" alt=""> -->
           </div>
         </ngu-tile>
-        <!-- <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:0.5">&lt;</button>
-        <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:0.5">&gt;</button> -->
-      </ngu-carousel>
+      </ngu-carousel> -->
+      <video #video class="homeVideo" autoplay muted onloadedmetadata="this.muted = true; this.play();" src="../../../assets/video/RASS Project Consultants Pvt Ltd Promo.mp4"></video>
     </div>
   </div>
   <div class="row NoMargin CarouselRow">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12 NoPadding outlineNone carousel-fade">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-12 NoPadding outlineNone carousel-fade">
       <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="clientlog">
         <ngu-tile class="my-auto" *nguCarouselDef="let item; let i = index; let ani = animate">
           <div class="sliderImgDiv col-xs-12 col-lg-6 col-md-6 col-sm-12 col-12">

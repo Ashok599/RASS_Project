@@ -67,3 +67,17 @@ i.fa.fa-map-pin {
     width: 100%;
     resize: none;
 }
+
+.contactUsForm label {
+    color: #005a7a;
+    margin-bottom: 0;
+}
+
+.contactUsForm input {
+    padding: 2px 5px;
+    height: auto;
+}
+
+.contactUsForm .form-group {
+    margin-bottom: 0;
+}

@@ -56,6 +56,11 @@
     left: 0;
 } */
 
+.homeVideo {
+    width: 50%;
+    outline: none;
+}
+
 .carousel {
     padding-top: 10px;
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ChangeDetectionStrategy, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy, AfterViewInit, ChangeDetectorRef, ViewChild, ElementRef } from '@angular/core';
 import { NguCarouselConfig } from '@ngu/carousel';
 import { Observable, interval } from 'rxjs';
 
@@ -15,6 +15,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class HomeComponent implements OnInit {
   _object = Object;
   clientlog: any = [];
+  @ViewChild('video') video: ElementRef<HTMLElement>
 
   public carouselTileItems$: Observable<number[]>;
   public carouselTileConfig: NguCarouselConfig = {
@@ -64,8 +65,8 @@ export class HomeComponent implements OnInit {
 
     this.clientlog = [
       '../../../assets/clientLogos/A1.png',
-      '../../../assets/clientLogos/A2.png',
-      '../../../assets/clientLogos/A3.JPG',
+      '../../../assets/clientLogos/A2.jpg',
+      '../../../assets/clientLogos/A3.png',
       '../../../assets/clientLogos/A4.jpg',
       '../../../assets/clientLogos/B1.jpg',
       '../../../assets/clientLogos/B2.jpg',
@@ -74,24 +75,24 @@ export class HomeComponent implements OnInit {
       '../../../assets/clientLogos/C1.jpg',
       '../../../assets/clientLogos/C2.jpg',
       '../../../assets/clientLogos/C3.jpg',
-      '../../../assets/clientLogos/C4.png',
-      '../../../assets/clientLogos/D1.jpg',
+      '../../../assets/clientLogos/C4.jpg',
+      '../../../assets/clientLogos/D1.png',
       '../../../assets/clientLogos/D2.jpg',
-      '../../../assets/clientLogos/D3.jpg',
-      '../../../assets/clientLogos/D4.jpg',
-      '../../../assets/clientLogos/E1.jpg',
-      '../../../assets/clientLogos/E2.jpg',
-      '../../../assets/clientLogos/E3.jpg',
+      '../../../assets/clientLogos/D3.png',
+      '../../../assets/clientLogos/D4.jfif',
+      '../../../assets/clientLogos/E1.png',
+      '../../../assets/clientLogos/E2.png',
+      '../../../assets/clientLogos/E3.png',
       '../../../assets/clientLogos/E4.jpg',
       '../../../assets/clientLogos/F1.jpg',
       '../../../assets/clientLogos/F2.jpg',
       '../../../assets/clientLogos/F3.jpg',
       '../../../assets/clientLogos/F4.jpg',
-      '../../../assets/clientLogos/G1.png',
+      '../../../assets/clientLogos/G1.jpg',
       '../../../assets/clientLogos/G2.jpg',
-      '../../../assets/clientLogos/G3.png',
-      '../../../assets/clientLogos/G4.png',
-      '../../../assets/clientLogos/H1.png',
+      '../../../assets/clientLogos/G3.jpg',
+      '../../../assets/clientLogos/G4.jpg',
+      '../../../assets/clientLogos/H1.jpg',
       '../../../assets/clientLogos/H2.jpg',
       '../../../assets/clientLogos/H3.jpg',
       '../../../assets/clientLogos/H4.jpg',
@@ -99,27 +100,27 @@ export class HomeComponent implements OnInit {
       '../../../assets/clientLogos/J2.jpg',
       '../../../assets/clientLogos/J3.jpg',
       '../../../assets/clientLogos/J4.jpg',
-      '../../../assets/clientLogos/K1.jpg',
+      '../../../assets/clientLogos/K1.png',
       '../../../assets/clientLogos/K2.jpg',
       '../../../assets/clientLogos/K3.jpg',
       '../../../assets/clientLogos/K4.png',
-      '../../../assets/clientLogos/L1.jpg',
+      '../../../assets/clientLogos/L1.png',
       '../../../assets/clientLogos/L2.jpg',
-      '../../../assets/clientLogos/L3.jpg',
+      '../../../assets/clientLogos/L3.JPG',
       '../../../assets/clientLogos/L4.jpg',
       '../../../assets/clientLogos/M1.jpg',
       '../../../assets/clientLogos/M2.jpg',
-      '../../../assets/clientLogos/M3.jpg',
+      '../../../assets/clientLogos/M3.png',
       '../../../assets/clientLogos/M4.jpg',
       '../../../assets/clientLogos/N1.jpg',
       '../../../assets/clientLogos/N2.jpg',
       '../../../assets/clientLogos/N3.jpg',
-      '../../../assets/clientLogos/N4.png',
+      '../../../assets/clientLogos/N4.jpg',
       '../../../assets/clientLogos/O1.jpg',
       '../../../assets/clientLogos/O2.jpg',
-      '../../../assets/clientLogos/O3.png',
-      '../../../assets/clientLogos/O4.png',
-      '../../../assets/clientLogos/P1.jfif',
+      '../../../assets/clientLogos/O3.jpg',
+      '../../../assets/clientLogos/O4.jpg',
+      '../../../assets/clientLogos/P1.jpg',
     ]
 
     // this.Carousel = {
