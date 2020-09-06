@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +11,12 @@ export class HeaderComponent implements OnInit {
   headerTab: any = '';
   Url: any;
 
-  constructor(private router: Router ) { }
+  constructor(private router: Router,
+    private sharedService: DataService) { }
 
   ngOnInit() {
     this.Url = window.location.href
+    this.sharedService.sharedMessage.subscribe(message => this.headerTab = message);
     if(this.Url.includes('projects')) {
       this.headerTab = 'project';
     }

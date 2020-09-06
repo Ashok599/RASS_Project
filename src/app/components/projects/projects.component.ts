@@ -141,7 +141,7 @@ export class ProjectsComponent implements OnInit {
       },
       "pro6": {
         "proName": "Mahindra and Mahindra",
-        "proLocation": "Uttarakhand",
+        "proLocation": "Nashik",
         "proLogo": "../../../assets/projectLogos/mahindra-logo.png",
         "proMainImg": "../../../assets/projectPhotos/Mahindra 1.jpg",
         "proImages": [
@@ -180,7 +180,8 @@ export class ProjectsComponent implements OnInit {
         "proImages": [
           "../../../assets/projectPhotos/Madhusilica 1.jpg",
           "../../../assets/projectPhotos/Madhusilica 2.jpg",
-          "../../../assets/projectPhotos/Madhusilica 3.jpg"
+          "../../../assets/projectPhotos/Madhusilica 3.jpg",
+          "../../../assets/projectPhotos/Madhusilica 4.jpg"
         ]
       },
       "pro10": {
@@ -227,7 +228,7 @@ export class ProjectsComponent implements OnInit {
       },
       "pro16": {
         "proName": "United Phosphorous Ltd",
-        "proLocation": "Jhagadia",
+        "proLocation": "Jhagadia, Ankleshwar, Vapi and Tarapur",
         "proLogo": "../../../assets/projectLogos/united-logo.jpg",
         "proMainImg": "../../../assets/projectPhotos/UPL1.jpg",
         "proImages": [
@@ -264,7 +265,8 @@ export class ProjectsComponent implements OnInit {
         "proImages": [
           "../../../assets/projectPhotos/Forbes 1.jpg",
           "../../../assets/projectPhotos/Forbes 2.jpg",
-          "../../../assets/projectPhotos/Forbes 3.jpg"
+          "../../../assets/projectPhotos/Forbes 3.jpg",
+          "../../../assets/projectPhotos/Forbes 4.jpg"
         ]
       },
       "pro21": {
@@ -312,6 +314,15 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/orchid_3.jpg"
         ]
       },
+      "pro25": {
+        "proName": "Cummins Technologies Pvt. Ltd.",
+        "proLocation": "Phaltan",
+        "proLogo": "../../../assets/projectLogos/orchid-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Cummins Technologies Pvt. Ltd., Phaltan.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Cummins Technologies Pvt. Ltd., Phaltan.jpg",
+        ]
+      },
       "pro26": {
         "proName": "Endress + Hauser",
         "proLocation": "Aurangabad",
@@ -344,6 +355,40 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/mother-dairy1.jpg",
         ]
       },
+      "pro29": {
+        "proName": "Child Care Centre by Integrity Foundation",
+        "proLocation": "Ahmednagar",
+        "proLogo": "../../../assets/projectLogos/mother-dairy-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Child Care Centre by Integrity Foundation, Ahmednagar 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Child Care Centre by Integrity Foundation, Ahmednagar 1.jpg",
+          "../../../assets/projectPhotos/Child Care Centre by Integrity Foundation, Ahmednagar 2.jpg",
+          "../../../assets/projectPhotos/Child Care Centre by Integrity Foundation, Ahmednagar 3.jpg",
+
+        ]
+      },
+      "pro30": {
+        "proName": "Cummins Turbo technologies",
+        "proLocation": "Pithampur",
+        "proLogo": "../../../assets/projectLogos/mother-dairy-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 1.jpg",
+          "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 2.jpg",
+          "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 3.jpg",
+          "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 4.jpg",
+          "../../../assets/projectPhotos/Cummins Turbo technologies, Pithampur 5.jpg",
+        ]
+      },
+      "pro31": {
+        "proName": "Decathlon Sports India Pvt. Ltd.",
+        "proLocation": "Pune and Nashik",
+        "proLogo": "../../../assets/projectLogos/mother-dairy-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Decathlon Sports India Pvt. Ltd. - Pune and Nashik.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Decathlon Sports India Pvt. Ltd. - Pune and Nashik.jpg",
+        ]
+      },
       "pro32": {
         "proName": "PLANSEE India High Performance Materials Pvt Ltd",
         "proLocation": "Mysore",
@@ -364,6 +409,38 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/TEMPLE2.jpg",
         ]
       },
+      "pro34": {
+        "proName": "E-Prashasan",
+        "proLocation": "Pune",
+        "proLogo": "../../../assets/projectLogos/temple-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/E-Prashasan, Pune 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/E-Prashasan, Pune 1.jpg",
+          "../../../assets/projectPhotos/E-Prashasan, Pune 1.jpg",
+        ]
+      },
+      "pro35": {
+        "proName": "G.B.Gummi LLP",
+        "proLocation": "Shirval",
+        "proLogo": "../../../assets/projectLogos/temple-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/G.B.Gummi LLP, Shirval 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/G.B.Gummi LLP, Shirval 1.jpg",
+          "../../../assets/projectPhotos/G.B.Gummi LLP, Shirval 2.jpg",
+          "../../../assets/projectPhotos/G.B.Gummi LLP, Shirval 3.jpg",
+        ]
+      },
+      "pro36": {
+        "proName": "Givaudan",
+        "proLocation": "",
+        "proLogo": "../../../assets/projectLogos/temple-logo.jpg",
+        "proMainImg": "../../../assets/projectPhotos/Givaudan 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Givaudan 1.jpg",
+          "../../../assets/projectPhotos/Givaudan 2.jpg",
+          "../../../assets/projectPhotos/Givaudan 3.jpg",
+        ]
+      },
       "pro37": {
         "proName": "Jai Hind School",
         "proLocation": "Pune",
@@ -374,6 +451,39 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Jai Hind School 2.jpg",
           "../../../assets/projectPhotos/Jai Hind School 3.jpg",
           "../../../assets/projectPhotos/Jai Hind School 4.jpg"
+        ]
+      },
+      "pro39": {
+        "proName": "Global Highstreet Mall",
+        "proLocation": "Pune",
+        "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
+        "proMainImg": "../../../assets/projectPhotos/Global Highstreet Mall, Pune 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Global Highstreet Mall, Pune 1.jpg",
+          "../../../assets/projectPhotos/Global Highstreet Mall, Pune 2.jpg",
+          "../../../assets/projectPhotos/Global Highstreet Mall, Pune 3.jpg",
+        ]
+      },
+      "pro40": {
+        "proName": "Joyville Housing",
+        "proLocation": "Pune",
+        "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
+        "proMainImg": "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+          "../../../assets/projectPhotos/Joyville Housing, Pune 2.jfif",
+          "../../../assets/projectPhotos/Joyville Housing, Pune 3.jfif",
+        ]
+      },
+      "pro41": {
+        "proName": "Joyville Housing",
+        "proLocation": "Pune",
+        "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
+        "proMainImg": "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+        "proImages": [
+          "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+          "../../../assets/projectPhotos/Joyville Housing, Pune 2.jfif",
+          "../../../assets/projectPhotos/Joyville Housing, Pune 3.jfif",
         ]
       },
     }

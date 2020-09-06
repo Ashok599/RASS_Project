@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, BehaviorSubject } from 'rxjs';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,6 +9,9 @@ export class DataService {
   private notify = new Subject();
   notifyObservable$ = this.notify.asObservable();
 
+  private message = new BehaviorSubject('');
+  sharedMessage = this.message.asObservable();
+
   constructor() {
 
   }
@@ -16,5 +19,9 @@ export class DataService {
     if (data) {
       this.notify.next(data);
     }
+  }
+
+  nextMessage(message: string) {
+    this.message.next(message)
   }
 }

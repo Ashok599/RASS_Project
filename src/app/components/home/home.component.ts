@@ -3,6 +3,7 @@ import { NguCarouselConfig } from '@ngu/carousel';
 import { Observable, interval } from 'rxjs';
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { DataService } from '../../services/data.service';
 
 
 @Component({
@@ -49,7 +50,8 @@ export class HomeComponent implements OnInit {
   proTitle: any;
   achivements: any[];
 
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal,
+    private sharedService: DataService) {
     // config.interval = 4000;
     // config.wrap = true;
     // config.keyboard = false;
@@ -62,6 +64,8 @@ export class HomeComponent implements OnInit {
       "../../../assets/images/achivements1.png",
       "../../../assets/images/achivements2.png",
     ];
+
+    this.sharedService.nextMessage("home")
 
     this.clientlog = [
       '../../../assets/clientLogos/A1.png',
