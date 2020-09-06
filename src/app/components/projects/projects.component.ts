@@ -475,17 +475,17 @@ export class ProjectsComponent implements OnInit {
           "../../../assets/projectPhotos/Joyville Housing, Pune 3.jfif",
         ]
       },
-      "pro41": {
-        "proName": "Joyville Housing",
-        "proLocation": "Pune",
-        "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
-        "proMainImg": "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
-        "proImages": [
-          "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
-          "../../../assets/projectPhotos/Joyville Housing, Pune 2.jfif",
-          "../../../assets/projectPhotos/Joyville Housing, Pune 3.jfif",
-        ]
-      },
+      // "pro41": {
+      //   "proName": "Joyville Housing",
+      //   "proLocation": "Pune",
+      //   "proLogo": "../../../assets/projectLogos/jaihind-logo.png",
+      //   "proMainImg": "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+      //   "proImages": [
+      //     "../../../assets/projectPhotos/Joyville Housing, Pune 1.jpg",
+      //     "../../../assets/projectPhotos/Joyville Housing, Pune 2.jfif",
+      //     "../../../assets/projectPhotos/Joyville Housing, Pune 3.jfif",
+      //   ]
+      // },
     }
   }
 }
