@@ -14,6 +14,7 @@ import { QualityPolicyComponent } from './components/aboutus/quality-policy/qual
 import { VisionMissionComponent } from './components/aboutus/vision-mission/vision-mission.component';
 import { ManagementComponent } from './components/aboutus/management/management.component';
 import { ActivitesComponent } from './components/aboutus/activites/activites.component';
+import { SafetyPolicyComponent } from './components/aboutus/safety-policy/safety-policy.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -49,6 +50,7 @@ const routes: Routes = [
         component: ManagementComponent
       },
       { path: 'our-activities', component: ActivitesComponent },
+      { path: 'safetypolicy', component: SafetyPolicyComponent },
     ]
   },
   { path: 'contactus', component: ContactusComponent },

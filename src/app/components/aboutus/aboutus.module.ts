@@ -7,9 +7,10 @@ import { ManagementComponent } from './management/management.component';
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
 import { QualityPolicyComponent } from './quality-policy/quality-policy.component';
 import { ActivitesComponent } from './activites/activites.component';
+import { SafetyPolicyComponent } from './safety-policy/safety-policy.component';
 
 @NgModule({
-  declarations: [OverviewComponent, ManagementComponent, VisionMissionComponent, QualityPolicyComponent, ActivitesComponent],
+  declarations: [OverviewComponent, ManagementComponent, VisionMissionComponent, QualityPolicyComponent, ActivitesComponent, SafetyPolicyComponent],
   imports: [
     CommonModule,
     AboutusRoutingModule

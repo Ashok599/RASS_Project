@@ -4,29 +4,40 @@
       <table class="table NoMargin" id="service-table">
         <tr>
           <td>
-            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'overview'}" routerLink="./overview/" (click)="activeTab = 'overview'">OVERVIEW</a>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'overview'}" routerLink="./overview/"
+              (click)="activeTab = 'overview'">OVERVIEW</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'management'}" routerLink="./management/" (click)="activeTab = 'management'">MANAGEMENT</a>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'management'}" routerLink="./management/"
+              (click)="activeTab = 'management'">MANAGEMENT</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'vision'}" routerLink="./vision-and-mission/" (click)="activeTab = 'vision'">VISION AND MISSION</a>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'vision'}" routerLink="./vision-and-mission/"
+              (click)="activeTab = 'vision'">VISION AND MISSION</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'quality'}" routerLink="./qualitypolicy/" (click)="activeTab = 'quality'">QUALITY POLICY</a>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'quality'}" routerLink="./qualitypolicy/"
+              (click)="activeTab = 'quality'">QUALITY POLICY</a>
           </td>
         </tr>
         <tr>
-            <td>
-              <a class="nav-link"  [ngClass]="{'activeTab': activeTab === 'activities'}" routerLink="./our-activities/" (click)="activeTab = 'activities'">OUR TEAMS</a>
-            </td>
-          </tr>
+          <td>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'safety'}" routerLink="./safetypolicy/"
+              (click)="activeTab = 'safety'">SAFETY POLICY</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="nav-link" [ngClass]="{'activeTab': activeTab === 'activities'}" routerLink="./our-activities/"
+              (click)="activeTab = 'activities'">OUR TEAMS</a>
+          </td>
+        </tr>
       </table>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">

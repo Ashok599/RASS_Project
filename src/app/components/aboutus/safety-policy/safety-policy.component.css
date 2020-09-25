@@ -1,0 +1,14 @@
+.wrapper {
+    height: 100vh;
+}
+.innerWrapper {
+    margin: 1% 4% 0% 4%;
+    padding: 20px;
+}
+.contentContainer {
+    width: 100%
+}
+.desc {
+    padding: 0px 10%;
+    font-size: 18px;
+}
