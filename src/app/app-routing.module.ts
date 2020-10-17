@@ -49,7 +49,7 @@ const routes: Routes = [
         path: 'management',
         component: ManagementComponent
       },
-      { path: 'our-activities', component: ActivitesComponent },
+      { path: 'our-teams', component: ActivitesComponent },
       { path: 'safetypolicy', component: SafetyPolicyComponent },
     ]
   },
