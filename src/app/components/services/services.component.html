@@ -69,6 +69,11 @@
             <a class="nav-link">POST-CONSTRUCTION STAGE</a>
           </td>
         </tr>
+        <tr class="subListMenu">
+          <td (click)="showSubService('Turnkey and Interior Projects')" [ngClass]="{'activeTab': activeTab === 'Turnkey and Interior Projects'}">
+            <a class="nav-link">TURNKEY AND INTERIOR PROJECTS</a>
+          </td>
+        </tr>
       </table>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 serviceDetail NoPadding">
@@ -125,7 +130,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/Architectural-Structural.jpg" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/1.ARCHITECTURAL STRUCTURAL DESIGN.jpg" alt="">
                 </div>
               </div>
 
@@ -177,30 +182,27 @@
                       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                       <span>Transformer and Generator Protection</span>
                     </li>
-                  </ul>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/Electrical-Engineering.jpg" alt="">
-
-                  <ul class="serviceList list-group list-group-flush">
-                    <li class="list-group-item pl-0" style="display: flex;">
+                    <li class="list-group-item" style="display: flex;">
                       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                       <span>Prepare scheme for Data/Voice Cabling</span>
                     </li>
-                    <li class="list-group-item pl-0" style="display: flex;">
+                    <li class="list-group-item" style="display: flex;">
                       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                       <span>Design of solar system</span>
                     </li>
-                    <li class="list-group-item pl-0" style="display: flex;">
+                    <li class="list-group-item" style="display: flex;">
                       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                       <span>Testing and Commissioning Assistance</span>
                     </li>
-                    <li class="list-group-item pl-0" style="display: flex;">
+                    <li class="list-group-item" style="display: flex;">
                       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                       <span>Preparation of tender document, BOQ and estimate</span>
                     </li>
                   </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                  <!-- {{ item.value.imgSrc | json }} -->
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/2.ELECTRICAL DESIGN.jpg" alt="">
                 </div>
               </div>
 
@@ -248,7 +250,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/Mechanical-Engineering.jpg" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/3.HVAC AND VENTILATION DESIGN.jpg" alt="">
                 </div>
               </div>
 
@@ -276,7 +278,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/fire.jpg" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/4.FIRE FIGHTING DESIGN.jpg" alt="">
                 </div>
               </div>
 
@@ -314,7 +316,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/interior.jpg" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/5.INTERIOR AND LANDSCAPE DESIGN.jpg" alt="">
                 </div>
               </div>
 
@@ -354,7 +356,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/preConstruction.jpg" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/6.PRE-CONSTRUCTION STAGE.jpg" alt="">
                 </div>
               </div>
 
@@ -394,7 +396,59 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" src="assets/images/postConstruction.png" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/12.POST-CONSTRUCTION STAGE.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="row" style="padding: 25px 30px;" *ngIf="activeTab == 'Turnkey and Interior Projects'">
+                <h4 class="ssTitle">TURNKEY AND INTERIOR PROJECTS</h4>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                  <ul class="serviceList list-group list-group-flush">
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Detailing and Design Engineering</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Cost analysis and budget submission</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Statutory approvals</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Approval of Specifications from client</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Procurement of Material</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Civil Construction</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Electrical Installation</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Utility Installation</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Infrastructure Development</span>
+                    </li>
+                    <li class="list-group-item" style="display: flex;">
+                      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                      <span>Handing over.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                  <!-- {{ item.value.imgSrc | json }} -->
+                  <img class="ssImg pt-4" src="assets/images/interior.jpg" alt="">
                 </div>
               </div>
 
@@ -483,13 +537,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
                   <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg pt-4" style="height: 300px;" src="assets/images/subServices/cost-management1.png"
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/8.COST MANAGEMENT.jpg"
                     alt="">
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <!-- {{ item.value.imgSrc | json }} -->
-                  <img class="ssImg" style="height: 247px;" src="assets/images/subServices/cost-management2.png" alt="">
                 </div>
               </div>
 
@@ -524,7 +573,7 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <img class="ssImg pt-4" src="assets/images/subServices/Quality-Management.png" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/9.QUALITY MANAGEMENT.jpg" alt="">
                 </div>
               </div>
 
@@ -555,13 +604,7 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <img class="ssImg pt-3" style="width: 80%; height: 260px;"  src="assets/images/subServices/safety-management.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <img class="ssImg p-3" style="width: 80%; height: 260px;"  src="assets/images/subServices/safety-management3.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <img class="ssImg pt-3" style="width: 80%; height: 260px;"  src="assets/images/subServices/safety-management4.png" alt="">
+                  <img class="ssImg pt-3" style="height: 29em;"  src="assets/images/10.SAFETY MANAGEMENT.jpg" alt="">
                 </div>
               </div>
 
@@ -588,7 +631,7 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                  <img class="ssImg pt-4" src="assets/images/subServices/risk-management.png" alt="">
+                  <img class="ssImg pt-4" style="height: 29em;" src="assets/images/11.RISK MANAGEMENT.jpg" alt="">
                 </div>
               </div>
 
