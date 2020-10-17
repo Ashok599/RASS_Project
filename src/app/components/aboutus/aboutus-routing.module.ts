@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'qualitypolicy', component: QualityPolicyComponent },
   { path: 'vision-and-mission', component: VisionMissionComponent },
   { path: 'management', component: ManagementComponent },
-  { path: 'our-activities', component: ActivitesComponent },
+  { path: 'our-teams', component: ActivitesComponent },
   // { path: '**', component: ServicethreeComponent }
 ];
 

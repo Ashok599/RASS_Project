@@ -1,0 +1,15 @@
+.galleryContainer {
+    padding: 8px;
+}
+
+ngx-gallery /deep/ ngx-gallery-image .ngx-gallery-arrow {
+    color: #008abb;
+}
+
+ngx-gallery /deep/ ngx-gallery-image /deep/ ngx-gallery-arrows  .ngx-gallery-arrow-right .ngx-gallery-arrow {
+    right: 51px !important;
+}
+
+ngx-gallery /deep/ ngx-gallery-image /deep/ ngx-gallery-arrows   .ngx-gallery-arrow-left .ngx-gallery-arrow {
+    left: 51px !important;
+}
